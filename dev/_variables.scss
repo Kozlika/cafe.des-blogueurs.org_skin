@@ -1,20 +1,12 @@
-$color1: #282c37; // darkest
-$color2: #d9e1e8; // lightest
-$color3: #9baec8; // lighter
+$color1: #34495e; // darkest
+$color2: #d2dce6; // lightest
+$color3: #93abc3; // lighter
 $color4: #2b90d9; // vibrant
 $color5: #ffffff; // white
 $color6: #df405a; // error red
 $color7: #79bd9a; // succ green
 $color8: #000000; // black
 
-$color1: #34495e; // darkest
-$color2: #d2dce6; // lightest
-$color3: #93abc3; // lighter
-$color4: #2b90d9; // vibrant
-$color6: #df405a; // error red
-$color7: #79bd9a; // succ green
-$color8: #000000; // black
-
 
 $body-bg: $color1;
-$body-txt: white;
+$body-txt: $color5;
