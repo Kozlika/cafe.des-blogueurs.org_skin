@@ -1,12 +1,9 @@
-// don't know where it applies…
+// Affichage hors instance
 .container {
-  width: 39em;
+  width: 100%;
+  max-width: 39em;
   margin: 0 auto;
-  margin-top: 40px;
-
-  @media screen and (max-width: 39em) {
-    width: 100%;
-  }
+  margin-top: 3rem;
 }
 
 .logo-container {
