@@ -138,14 +138,13 @@ body.admin {
 }
 
 .container {
-  width: 700px;
+  width: 39em;
   margin: 0 auto;
   margin-top: 40px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 39em) {
   .container {
     width: 100%;
-    margin: 0;
   }
 }
 
@@ -155,7 +154,7 @@ body.admin {
   margin-bottom: 0;
   cursor: default;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 20em) {
   .logo-container {
     margin: 30px auto;
   }
@@ -163,8 +162,8 @@ body.admin {
 .logo-container h1 {
   display: block;
   text-align: center;
-  color: #ffffff;
-  font-size: 48px;
+  color: #fff;
+  font-size: 3em;
   font-weight: 500;
 }
 .logo-container h1 img {
@@ -188,7 +187,7 @@ body.admin {
 }
 .logo-container h1 small {
   display: block;
-  font-size: 12px;
+  font-size: .75rem;
   font-weight: 400;
   font-family: 'Roboto Mono', monospace;
 }

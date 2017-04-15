@@ -1,11 +1,11 @@
+// don't know where it applies…
 .container {
-  width: 700px;
+  width: 39em;
   margin: 0 auto;
   margin-top: 40px;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 39em) {
     width: 100%;
-    margin: 0;
   }
 }
 
@@ -15,15 +15,15 @@
   margin-bottom: 0;
   cursor: default;
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 20em) {
     margin: 30px auto;
   }
 
   h1 {
     display: block;
     text-align: center;
-    color: $color5;
-    font-size: 48px;
+    color: $body-txt;
+    font-size: 3em;
     font-weight: 500;
 
     img {
@@ -53,7 +53,7 @@
 
     small {
       display: block;
-      font-size: 12px;
+      font-size: .75rem;
       font-weight: 400;
       font-family: 'Roboto Mono', monospace;
     }
