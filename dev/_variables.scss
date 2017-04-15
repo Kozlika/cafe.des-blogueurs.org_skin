@@ -7,5 +7,14 @@ $color6: #df405a; // error red
 $color7: #79bd9a; // succ green
 $color8: #000000; // black
 
-$body-bg: #34495e;
-$body-txt: #fff;
+$color1: #34495e; // darkest
+$color2: #d2dce6; // lightest
+$color3: #93abc3; // lighter
+$color4: #2b90d9; // vibrant
+$color6: #df405a; // error red
+$color7: #79bd9a; // succ green
+$color8: #000000; // black
+
+
+$body-bg: $color1;
+$body-txt: white;
