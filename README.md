@@ -2,6 +2,8 @@
 Design pour l'instance Mastodon Café des blogueurs
 https://cafe.des-blogueurs.org 
 
+![Copie d'écran du Café des blogueurs](screenshot.png?raw=true)
+
 ## Présentation
 Pour le moment, il n'existe pas de système dans Mastodon qui permette à un utilisateur de personnaliser son interface. Le design dépend de l'administrateur (souvent c'est celui par défaut). Cette solution n'est pas idéale mais permet d'attendre patiemment que la personnalisation existe un jour.
 
