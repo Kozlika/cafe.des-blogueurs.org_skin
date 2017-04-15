@@ -92,14 +92,12 @@ table {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #282c37 url('/dev/images/background-photo.jpeg?1492136576');
-  background-size: cover;
-  background-attachment: fixed;
-  font-size: 13px;
-  line-height: 18px;
+  background: #282c37;
+  font-size: .875em;
+  line-height: 1.2857;
   font-weight: 400;
-  color: #ffffff;
-  padding-bottom: 140px;
+  color: #fff;
+  padding-bottom: 8.75em;
   text-rendering: optimizelegibility;
   font-feature-settings: "kern";
   text-size-adjust: none;
@@ -108,12 +106,9 @@ body.app-body {
   position: fixed;
   width: 100%;
   height: 100%;
-  padding: 0;
-  background: #282c37;
 }
 body.embed {
   background: transparent;
-  margin: 0;
 }
 body.embed .container {
   position: absolute;
@@ -128,14 +123,10 @@ body.admin {
   height: 100%;
   padding: 0;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 20em) {
   body {
     padding-bottom: 0;
   }
-}
-
-button:focus {
-  outline: none;
 }
 
 .app-holder {

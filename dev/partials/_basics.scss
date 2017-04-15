@@ -1,13 +1,11 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: $color1 image-url('background-photo.jpeg');
-  background-size: cover;
-  background-attachment: fixed;
-  font-size: 13px;
-  line-height: 18px;
+  background: $body-bg;
+  font-size: .875em;
+  line-height: 1.2857;
   font-weight: 400;
-  color: $color5;
-  padding-bottom: 140px;
+  color: $body-txt;
+  padding-bottom: 8.75em;
   text-rendering: optimizelegibility;
   font-feature-settings: "kern";
   text-size-adjust: none;
@@ -16,13 +14,10 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    padding: 0;
-    background: $color1;
   }
 
   &.embed {
     background: transparent;
-    margin: 0;
 
     .container {
       position: absolute;
@@ -33,20 +28,16 @@ body {
   }
 
   &.admin {
-    background: darken($color1, 4%);
+    background: darken($body-bg, 4%);
     position: fixed;
     width: 100%;
     height: 100%;
     padding: 0;
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 20em) {
     padding-bottom: 0;
   }
-}
-
-button:focus {
-  outline: none;
 }
 
 .app-holder {
