@@ -1,32 +1,54 @@
-// dominantes monochrome
-$color1:  #4a5464; // darkest
-$color2:  #d2dce6; // lightest
-$color3:  #93abc3; // lighter
-$color4:  #3498db; // vibrant
+// PALETTE DE COULEURS
+// -------------------
 
-// messages et boutons
-$color6:  #c0392b; // error red
-$color7:  #27ae60; // succ green
-$color9:  #1abc9c; // bleu-vert1
-$color10: #16a085; // bleu-vert2
+// Camaïeu pour les fonds de page/blocs
+// de la version connectée
+$gray-dark1:        #282c37;
+$gray-dark2:        #393e4e;
+$gray-dark3:        #495064;
+$gray-dark4:        #5a637b;
 
-// oui, bon…
-$color5:  #ffffff; // white
-$color8:  #000000; // black
-$color11: #ecf0f1; // soft white
+// Camaïeu pour les fonds de la version web
+// consultation non connectée
+$slate-dark1:       #2c3e50;
+$slate-dark2:       #34495e;
 
-// explicites
-$body-bg: $color1;
-$body-bg-web: #2c3e50;
-$body-txt: $color5;
+// Texte
+// (n&b francs ici, peuvent être nuancés)
+$lightest:          #fff;
+$darkest:           #000;
+$gray-light:        #d0d3dd;
+$gray-soft:         #93abc3;
+$gray-medium:       #6a7592;
 
-$button-bg: $color10;
-$button-bg-hover: $color9;
+// Messages système
+$error:             #c0392b; // error red
+$success:           #27ae60; // succ green
 
-$bg-dark1:  #282c37;
-$bg-dark2:  #393e4e;
-$bg-dark3:  #4a5464;
-$bg-medium: #606984;
+// Autres couleurs
+$turquoise:         #00ced1;
+$darker-turquoise:  #009092;
+$lighter-turquoise: #dbfaf4;
+$blue-green:        #52abaf;
+$light-variant:     #e0ffff;
 
-$light-txt: lightcyan;
-$status-link: #52abaf;
+// application
+$base1:             $gray-dark1;
+$base2:             $gray-dark2;
+$base3:             $gray-dark3;
+$base4:             $gray-dark4;
+
+$body-bg:           $base1;
+$body-bg-web:       $slate-dark1;
+
+$body-txt:          $lightest;
+$muted-txt:         $gray-medium;
+$light-txt:         $gray-light;
+
+$vibrant:           $darker-turquoise;
+$button-bg-hover:   $turquoise;
+
+$accent:            $blue-green;
+$light-accent:      $light-variant;
+
+

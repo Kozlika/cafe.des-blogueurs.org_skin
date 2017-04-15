@@ -1,13 +1,13 @@
 .about-body {
   .wrapper {
-    max-width: 600px;
+    max-width: 40em;
     margin: 0 auto;
-    color: $color3;
+    color: $gray-soft;
     padding-top: 50px;
     padding-bottom: 50px;
 
     &.thicc {
-      max-width: 700px;
+      max-width: 46em;
     }
   }
 
@@ -15,7 +15,7 @@
     font: 46px/52px 'Roboto', sans-serif;
     font-weight: 600;
     margin-bottom: 20px;
-    color: $color4;
+    color: $light-accent;
     padding: 20px 0;
 
     img {
@@ -28,11 +28,11 @@
 
   h2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 28px;
     font-weight: 400;
     margin-bottom: 20px;
-    color: $color5;
+    color: $lightest;
   }
 
   h3 {
@@ -41,7 +41,7 @@
     line-height: 28px;
     font-weight: 400;
     margin-bottom: 20px;
-    color: $color2;
+    color: $gray-light;
   }
 
   ul, ol {
@@ -67,7 +67,7 @@
     margin-bottom: 26px;
 
     a {
-      color: $color4;
+      color: $lightest;
       text-decoration: underline;
     }
   }
@@ -76,14 +76,14 @@
     display: inline-block;
     padding: 7px 7px 5px 7px;
     margin: 0 2px;
-    background: $color3;
-    color: $color1;
+    background: $gray-soft;
+    color: $base2;
     font: 16px/16px 'Montserrat', sans-serif;
     font-weight: 300;
   }
 
   .screenshot {
-    box-shadow: 0 0 15px rgba($color8, 0.4);
+    box-shadow: 0 0 15px rgba($darkest, 0.4);
     margin-bottom: 26px;
 
     img {
@@ -103,7 +103,7 @@
       line-height: 36px;
 
       a {
-        color: $color3;
+        color: $gray-soft;
         text-decoration: underline;
       }
     }
@@ -124,8 +124,8 @@
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid lighten($color1, 10%);
-  border-bottom: 1px solid lighten($color1, 10%);
+  border-top: 1px solid lighten($base2, 10%);
+  border-bottom: 1px solid lighten($base2, 10%);
   padding-right: 14px;
 
   .section {
@@ -142,7 +142,7 @@
       font-size: 16px;
 
       &:last-child {
-        color: $color2;
+        color: $gray-light;
         font-size: 14px;
       }
     }
@@ -151,7 +151,7 @@
       font-weight: 500;
       font-size: 32px;
       line-height: 48px;
-      color: $color5;
+      color: $lightest;
     }
   }
 
@@ -186,7 +186,7 @@
 
     a {
       display: block;
-      color: $color5;
+      color: $lightest;
       text-decoration: none;
 
       &:hover {
@@ -198,7 +198,7 @@
 
     .username {
       display: block;
-      color: $color3;
+      color: $gray-soft;
     }
   }
 }
@@ -209,7 +209,7 @@
 
   strong {
     display: block;
-    color: $color5;
+    color: $lightest;
   }
 }
 
@@ -226,14 +226,14 @@
   }
 
   .sidebar {
-    border-left: 1px solid lighten($color1, 10%);
+    border-left: 1px solid lighten($base2, 10%);
     width: 180px;
     flex: 0 0 auto;
   }
 
   .panel {
     .panel-header {
-      background: lighten($color1, 10%);
+      background: lighten($base2, 10%);
       padding: 7px 14px;
       text-transform: uppercase;
       font-size: 12px;
@@ -258,7 +258,7 @@
           a {
             display: block;
             padding: 7px 14px;
-            color: rgba($color5, 0.7);
+            color: rgba($lightest, 0.7);
             text-decoration: none;
             transition: all 200ms linear;
 
@@ -267,17 +267,17 @@
             }
 
             &:hover {
-              color: $color5;
-              background-color: darken($color1, 5%);
+              color: $lightest;
+              background-color: darken($base2, 5%);
               transition: all 100ms linear;
             }
 
             &.selected {
-              color: $color5;
-              background-color: $color4;
+              color: $lightest;
+              background-color: $vibrant;
 
               &:hover {
-                background-color: lighten($color4, 5%);
+                background-color: lighten($vibrant, 5%);
               }
             }
           }
@@ -290,7 +290,7 @@
     flex-direction: column;
 
     .sidebar {
-      border: 1px solid lighten($color1, 10%);
+      border: 1px solid lighten($base2, 10%);
       width: auto;
     }
   }
@@ -335,10 +335,10 @@
   .simple_form, .closed-registrations-message {
     width: 300px;
     flex: 0 0 auto;
-    background: rgba(darken($color1, 7%), 0.5);
+    background: rgba(darken($base2, 7%), 0.5);
     padding: 14px;
     border-radius: 4px;
-    box-shadow: 0 0 15px rgba($color8, 0.4);
+    box-shadow: 0 0 15px rgba($darkest, 0.4);
 
     .actions {
       margin-bottom: 0;
@@ -348,11 +348,11 @@
       text-align: center;
 
       a {
-        color: $color2;
+        color: $gray-light;
       }
     }
   }
-  
+
   @media screen and (max-width: 625px) {
     .mascot {
       display: none;
