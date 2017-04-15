@@ -1877,9 +1877,10 @@ a.status__content__spoiler-link {
     flex: 0 0 auto;
     border-left: 1px solid #495064;
     padding: 0;
-    margin-top: .5rem;
+    margin: .5rem 0 0 0;
   }
   .column:first-child, .drawer:first-child {
+    margin-left: .25rem;
     padding-left: .5rem;
     border: none;
   }

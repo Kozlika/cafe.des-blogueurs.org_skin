@@ -899,9 +899,10 @@ a.status__content__spoiler-link {
     flex: 0 0 auto;
     border-left: 1px solid $base3;
     padding: 0;
-    margin-top: .5rem;
+    margin: .5rem 0 0 0;
 
     &:first-child {
+      margin-left: .25rem;
       padding-left: .5rem;
       border: none;
     }
