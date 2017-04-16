@@ -1114,6 +1114,65 @@ code {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+.ui {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.columns-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 20em) {
+  .columns-area {
+    padding: .5rem;
+  }
+}
+@media screen and (min-width: 64.1em) {
+  .columns-area {
+    padding: .5em 0;
+  }
+}
+
+.drawer,
+.column {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 64.1em) {
+  .drawer,
+  .column {
+    flex: 1;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #495064;
+  }
+  .drawer:first-child,
+  .column:first-child {
+    border: none;
+  }
+  .drawer:last-child,
+  .column:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 64.1em) {
+  .drawer {
+    width: 22%;
+    padding: 0 !important;
+  }
+}
+
 .button {
   background-color: #009092;
   font-family: inherit;
@@ -1824,35 +1883,12 @@ code {
   margin-bottom: 20px;
 }
 
-.columns-area {
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-@media screen and (min-width: 360px) {
-  .columns-area {
-    padding: 10px;
-  }
-}
 .column {
-  position: relative;
-  box-sizing: border-box;
   background: #282c37;
 }
 
-.ui {
-  flex: 0 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
 .drawer {
-  width: 22%;
   padding: .5rem;
-  box-sizing: border-box;
-  overflow-y: hidden;
 }
 
 .drawer__tab {
@@ -1866,12 +1902,6 @@ code {
   border-bottom: 2px solid transparent;
 }
 
-.column, .drawer {
-  display: flex;
-  flex: 1 1 100%;
-  overflow: hidden;
-}
-
 @media screen and (min-width: 20em) {
   .tabs-bar {
     margin: .5rem;
@@ -1883,42 +1913,8 @@ code {
   }
 }
 @media screen and (max-width: 64em) {
-  .column, .drawer {
-    width: 100%;
-    padding: 0;
-  }
-
-  .columns-area {
-    flex-direction: column;
-  }
-
   .search__input, .autosuggest-textarea__textarea {
     font-size: 1rem;
-  }
-}
-@media screen and (min-width: 64.1em) {
-  .columns-area {
-    padding: 0;
-  }
-
-  .column, .drawer {
-    flex: 1;
-    width: auto;
-    border-left: 1px solid #495064;
-    padding: 0;
-    margin: .5rem 0 0 0;
-  }
-  .column:first-child, .drawer:first-child {
-    margin-left: 0;
-    padding-left: 0;
-    border: none;
-  }
-  .column:last-child, .drawer:last-child {
-    padding-right: 0;
-  }
-
-  .drawer:first-child {
-    margin-left: .25em;
   }
 }
 @media screen and (min-width: 2560px) {
