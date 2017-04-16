@@ -6,19 +6,18 @@
   .sidebar-wrapper {
     flex: 1;
     height: 100%;
-    background: $base2;
+    background: $slate-dark2;
     display: flex;
     justify-content: flex-end;
   }
 
   .sidebar {
-    width: 240px;
+    width: 18em;
     height: 100%;
-    padding: 20px 0;
 
     .logo {
       display: block;
-      margin: 40px auto;
+      margin: 0 auto;
       width: 100px;
       height: 100px;
     }
@@ -30,8 +29,8 @@
 
       a {
         display: block;
-        padding: 15px 25px;
-        color: rgba($lightest, 0.7);
+        padding: .825rem 1.5rem;
+        color: $light-variant;
         text-decoration: none;
         transition: all 200ms linear;
         border-radius: 4px 0 0 4px;
@@ -42,35 +41,42 @@
 
         &:hover {
           color: $lightest;
-          background-color: darken($base2, 5%);
+          background-color: $slate-dark3;
           transition: all 100ms linear;
         }
 
         &.selected {
-          background: darken($base2, 2%);
-          border-radius: 4px 0 0 0;
+          color: $lightest;
         }
       }
 
       ul {
-        background: darken($base2, 4%);
+        background: $slate-dark1;
         border-radius: 0 0 0 4px;
+        border-right: 1px solid $slate-dark2;
 
         a {
           border: 0;
 
           &.selected {
             color: $lightest;
-            background-color: $vibrant;
             border-bottom: 0;
-            border-radius: 0;
+            background-color: $slate-dark3;
 
             &:hover {
-              background-color: lighten($vibrant, 5%);
+              text-decoration: underline;
             }
           }
         }
       }
+    }
+
+    > ul > li > a {
+      background: darken($slate-dark1, 6%);
+    }
+
+    > ul > li:first-child a {
+      background: transparent;
     }
   }
 
@@ -80,22 +86,22 @@
   }
 
   .content {
-    max-width: 700px;
+    max-width: 46em;
     padding: 20px 15px;
     padding-top: 60px;
     padding-left: 25px;
 
     h2 {
-      color: $gray-light;
-      font-size: 24px;
-      line-height: 28px;
+      color: $lightest;
+      font-size: 2rem;
+      line-height: 1;
       font-weight: 400;
       margin-bottom: 40px;
     }
 
     & > p {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: .875em;
+      line-height: 1.33;
       color: $gray-light;
       margin-bottom: 20px;
 
@@ -111,13 +117,17 @@
       background: transparent;
       border-bottom: 1px solid $base2;
     }
+
+    @media screen and (min-width: 46em) {
+      padding-top: 8rem;
+    }
   }
 
   .simple_form {
-    max-width: 400px;
+    max-width: 33em;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 40em) {
     display: block;
     overflow-y: auto;
 
@@ -132,7 +142,7 @@
       height: auto;
 
       .logo {
-        margin: 20px auto;
+        margin: 0 auto;
       }
     }
 
