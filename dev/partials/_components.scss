@@ -871,8 +871,6 @@
 .column {
   position: relative;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   background: $base1;
 }
 
@@ -888,8 +886,6 @@
   width: 22%;
   padding: .5rem;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   overflow-y: hidden;
 }
 
@@ -905,6 +901,7 @@
 }
 
 .column, .drawer {
+  display: flex;
   flex: 1 1 100%;
   overflow: hidden;
 }
@@ -941,7 +938,8 @@
   }
 
   .column, .drawer {
-    flex: 0 0 auto;
+    flex: 1;
+    width: auto;
     border-left: 1px solid $base3;
     padding: 0;
     margin: .5rem 0 0 0;

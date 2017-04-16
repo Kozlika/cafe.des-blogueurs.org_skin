@@ -1837,8 +1837,6 @@ code {
 .column {
   position: relative;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   background: #282c37;
 }
 
@@ -1854,8 +1852,6 @@ code {
   width: 22%;
   padding: .5rem;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   overflow-y: hidden;
 }
 
@@ -1871,6 +1867,7 @@ code {
 }
 
 .column, .drawer {
+  display: flex;
   flex: 1 1 100%;
   overflow: hidden;
 }
@@ -1905,7 +1902,8 @@ code {
   }
 
   .column, .drawer {
-    flex: 0 0 auto;
+    flex: 1;
+    width: auto;
     border-left: 1px solid #495064;
     padding: 0;
     margin: .5rem 0 0 0;
