@@ -41,8 +41,6 @@
   padding: 0;
 
   @media screen and (min-width: 64.1em) {
-    flex: 1;
-    width: auto;
     display: flex;
     flex-direction: column;
     border-left: 1px solid $base3;
@@ -57,9 +55,15 @@
   }
 }
 
+.column {
+    flex: 2;
+    width: auto;
+}
+
 .drawer {
   @media screen and (min-width: 64.1em) {
-    width: 22%;
+    flex: 1;
+    min-width: 20em;
     padding: 0 !important;
   }
 }
@@ -98,7 +102,28 @@
   }
 }
 
-// icones entête colonnes 2 et 3
+// entête de colonne
+.column-header {
+  padding: 1.125rem;
+  font-size: 1rem;
+  background: $base2;
+  flex: 0 0 auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-bottom: .5rem;
+  line-height: 1;
+
+  &.active {
+    box-shadow: 0 1px 0 rgba($base2, 0.3);
+  }
+
+  &.active .fa {
+    color: $light-txt;
+    text-shadow: 0 0 10px rgba($vibrant, 0.4);
+  }
+}
+
 .column-icon {
   color: $light-accent;
   background: transparent;
@@ -108,24 +133,38 @@
   }
 }
 
+.collapsable-collapsed,
+.collapsable,
+.column-icon,
+.column-icon-clear {
+  line-height: 1;
+}
+
+.collapsable-collapsed {
+  color: $gray-soft;
+  background: $base2;
+  margin-top: -.33rem;
+}
+
+.collapsable {
+  color: $lightest;
+  background: $base2;
+  margin-top: -.33rem;
+
+  &:hover {
+    color: $lightest;
+    background: $base2;
+  }
+}
+
 .column-icon-clear {
   font-size: 1rem;
   padding: 1rem .25rem;
   position: absolute;
-  right: 2rem;
+  right: 3rem;
   top: .25em;
   cursor: pointer;
   z-index: 2;
-}
-
-.column-header + div,
-.column-icon {
-  line-height: 1;
-  margin-top: -.33rem;
-  }
-
-.column-icon[title^="Clear"] {
-  margin-top: 0;
 }
 
 
@@ -467,7 +506,7 @@
 }
 
 .compose-form__label {
-  display: block;
+  display: inline-block;
   line-height: 1.5;
   vertical-align: middle;
 
@@ -1216,7 +1255,6 @@
 }
 
 .react-toggle-thumb {
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   position: absolute;
   top: 1px;
   left: 1px;
@@ -1251,7 +1289,6 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  resize: none;
   margin: 0;
   color: $base2;
   padding: 10px;
@@ -1406,46 +1443,8 @@ button.icon-button.active i.fa-retweet {
   cursor: default;
 }
 
-.column-header {
-  padding: 1.125rem;
-  font-size: 1rem;
-  background: $base2;
-  flex: 0 0 auto;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-  margin-bottom: .5rem;
-  line-height: 1;
-
-  &.active {
-    box-shadow: 0 1px 0 rgba($base2, 0.3);
-  }
-
-  &.active .fa {
-    color: $light-txt;
-    text-shadow: 0 0 10px rgba($vibrant, 0.4);
-  }
-}
-
-
-
 .loading-indicator {
   color: $gray-light;
-}
-
-.collapsable-collapsed {
-  color: $gray-soft;
-  background: $base2;
-}
-
-.collapsable {
-  color: $lightest;
-  background: $base2;
-
-  &:hover {
-    color: $lightest;
-    background: $base2;
-  }
 }
 
 .media-spoiler {
@@ -1942,11 +1941,13 @@ button.icon-button.active i.fa-retweet {
 
 .search {
   position: relative;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  border-radius: .25em;
 }
 
 .search__input {
   padding-right: 1.75em;
-  color: $gray-light;
   outline: 0;
   box-sizing: border-box;
   display: block;
@@ -1955,7 +1956,7 @@ button.icon-button.active i.fa-retweet {
   padding: .5rem;
   font-family: inherit;
   background: $base1;
-  color: $gray-soft;
+  color: $light-variant;
   font-size: .875rem;
   margin: 0;
 
@@ -1984,7 +1985,7 @@ button.icon-button.active i.fa-retweet {
     font-size: 18px;
     width: 18px;
     height: 18px;
-    color: $gray-light;
+    color: $light-variant;
     cursor: default;
     pointer-events: none;
 
@@ -2022,14 +2023,14 @@ button.icon-button.active i.fa-retweet {
   color: lighten($base2, 26%);
   background: lighten($base2, 2%);
   border-bottom: 1px solid darken($base2, 4%);
-  padding: 15px 10px;
-  font-size: 14px;
+  padding: 1rem .5rem;
+  font-size: .875rem;
   font-weight: 500;
 }
 
 .search-results__hashtag {
   display: block;
-  padding: 10px;
+  padding: .5rem;
   color: $gray-light;
   text-decoration: none;
 

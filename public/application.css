@@ -1150,8 +1150,6 @@ code {
 @media screen and (min-width: 64.1em) {
   .drawer,
   .column {
-    flex: 1;
-    width: auto;
     display: flex;
     flex-direction: column;
     border-left: 1px solid #495064;
@@ -1166,9 +1164,15 @@ code {
   }
 }
 
+.column {
+  flex: 2;
+  width: auto;
+}
+
 @media screen and (min-width: 64.1em) {
   .drawer {
-    width: 22%;
+    flex: 1;
+    min-width: 20em;
     padding: 0 !important;
   }
 }
@@ -1204,6 +1208,25 @@ code {
   cursor: default;
 }
 
+.column-header {
+  padding: 1.125rem;
+  font-size: 1rem;
+  background: #393e4e;
+  flex: 0 0 auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-bottom: .5rem;
+  line-height: 1;
+}
+.column-header.active {
+  box-shadow: 0 1px 0 rgba(57, 62, 78, 0.3);
+}
+.column-header.active .fa {
+  color: #d0d3dd;
+  text-shadow: 0 0 10px rgba(0, 144, 146, 0.4);
+}
+
 .column-icon {
   color: #e0ffff;
   background: transparent;
@@ -1212,24 +1235,37 @@ code {
   color: #fff;
 }
 
+.collapsable-collapsed,
+.collapsable,
+.column-icon,
+.column-icon-clear {
+  line-height: 1;
+}
+
+.collapsable-collapsed {
+  color: #93abc3;
+  background: #393e4e;
+  margin-top: -.33rem;
+}
+
+.collapsable {
+  color: #fff;
+  background: #393e4e;
+  margin-top: -.33rem;
+}
+.collapsable:hover {
+  color: #fff;
+  background: #393e4e;
+}
+
 .column-icon-clear {
   font-size: 1rem;
   padding: 1rem .25rem;
   position: absolute;
-  right: 2rem;
+  right: 3rem;
   top: .25em;
   cursor: pointer;
   z-index: 2;
-}
-
-.column-header + div,
-.column-icon {
-  line-height: 1;
-  margin-top: -.33rem;
-}
-
-.column-icon[title^="Clear"] {
-  margin-top: 0;
 }
 
 .icon-button {
@@ -1511,7 +1547,7 @@ code {
 }
 
 .compose-form__label {
-  display: block;
+  display: inline-block;
   line-height: 1.5;
   vertical-align: middle;
 }
@@ -2168,7 +2204,6 @@ code {
 }
 
 .react-toggle-thumb {
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   position: absolute;
   top: 1px;
   left: 1px;
@@ -2202,7 +2237,6 @@ code {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  resize: none;
   margin: 0;
   color: #393e4e;
   padding: 10px;
@@ -2350,41 +2384,8 @@ button.icon-button.active i.fa-retweet {
   cursor: default;
 }
 
-.column-header {
-  padding: 1.125rem;
-  font-size: 1rem;
-  background: #393e4e;
-  flex: 0 0 auto;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-  margin-bottom: .5rem;
-  line-height: 1;
-}
-.column-header.active {
-  box-shadow: 0 1px 0 rgba(57, 62, 78, 0.3);
-}
-.column-header.active .fa {
-  color: #d0d3dd;
-  text-shadow: 0 0 10px rgba(0, 144, 146, 0.4);
-}
-
 .loading-indicator {
   color: #d0d3dd;
-}
-
-.collapsable-collapsed {
-  color: #93abc3;
-  background: #393e4e;
-}
-
-.collapsable {
-  color: #fff;
-  background: #393e4e;
-}
-.collapsable:hover {
-  color: #fff;
-  background: #393e4e;
 }
 
 .media-spoiler {
@@ -2827,11 +2828,13 @@ button.icon-button.active i.fa-retweet {
 
 .search {
   position: relative;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  border-radius: .25em;
 }
 
 .search__input {
   padding-right: 1.75em;
-  color: #d0d3dd;
   outline: 0;
   box-sizing: border-box;
   display: block;
@@ -2840,7 +2843,7 @@ button.icon-button.active i.fa-retweet {
   padding: .5rem;
   font-family: inherit;
   background: #282c37;
-  color: #93abc3;
+  color: #e0ffff;
   font-size: .875rem;
   margin: 0;
 }
@@ -2865,7 +2868,7 @@ button.icon-button.active i.fa-retweet {
   font-size: 18px;
   width: 18px;
   height: 18px;
-  color: #d0d3dd;
+  color: #e0ffff;
   cursor: default;
   pointer-events: none;
 }
@@ -2896,14 +2899,14 @@ button.icon-button.active i.fa-retweet {
   color: #737c99;
   background: #3d4354;
   border-bottom: 1px solid #303542;
-  padding: 15px 10px;
-  font-size: 14px;
+  padding: 1rem .5rem;
+  font-size: .875rem;
   font-weight: 500;
 }
 
 .search-results__hashtag {
   display: block;
-  padding: 10px;
+  padding: .5rem;
   color: #d0d3dd;
   text-decoration: none;
 }
