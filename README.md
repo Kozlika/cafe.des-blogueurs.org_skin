@@ -34,8 +34,16 @@ gem install compass
 
 Enjoy.
 
+### Tip 1
+
+L'essentiel de la présentation de la page de l'utilisateur se trouve dans le fichier /dev/partials/_components.scss. J'ai commenté du mieux possible pour aider à repérer les zones concernées.
+
+### Tip 2
+
+Je n'ai pas encore testé mais l'idée derrière la reprise et la réécriture du fichier des variables est qu'on devrait pouvoir customiser largement depuis ce fichier sans avoir à modifier les autres.
+
 ## Licence
 
-Licence MIT
-Auteur : Kozlika & contributors
+Auteur : Kozlika & contributors - Licence MIT
+
 

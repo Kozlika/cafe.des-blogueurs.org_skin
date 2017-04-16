@@ -128,6 +128,7 @@
   }
 }
 
+// pas trouvé où ça s'affiche
 .text-icon-button {
   color: $muted-txt;
   border: none;
@@ -182,6 +183,7 @@
   }
 }
 
+// avatars, base commune
 .avatar {
   border-radius: .25rem;
   background: transparent no-repeat;
@@ -190,99 +192,15 @@
   position: relative;
 }
 
+// modales des medias
 .lightbox .icon-button {
   color: $base2;
 }
 
-.compose-form__warning {
-  color: $gray-light;
-  margin-bottom: 15px;
-  border: 1px solid $gray-soft;
-  padding: 8px 10px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 400;
-
-  strong {
-    color: $lightest;
-    font-weight: 500;
-  }
-}
-
-.compose-form__modifiers {
-  color: $base2;
-  font-family: inherit;
-  font-size: 14px;
-  background: $lightest;
-  border-radius: 0 0 4px 0;
-}
-
-.compose-form__buttons {
-  padding: 10px;
-  background: darken($lightest, 8%);
-  box-shadow: inset 0 5px 5px rgba($darkest, 0.05);
-  border-radius: 0 0 4px 4px;
-  display: flex;
-
-  .icon-button {
-    box-sizing: content-box;
-    padding: 0 3px;
-  }
-}
-
-.compose-form__label {
-  display: block;
-  line-height: 24px;
-  vertical-align: middle;
-
-  &.with-border {
-    border-top: 1px solid $base2;
-    padding-top: 10px;
-  }
-
-  .compose-form__label__text {
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 14px;
-    margin-left: 8px;
-    color: $gray-soft;
-  }
-}
-
-.compose-form__textarea, .follow-form__input {
-  background: $lightest;
-
-  &:disabled {
-    background: $gray-light;
-  }
-}
-
-.emojione {
-  display: inline-block;
-  font-size: inherit;
-  vertical-align: middle;
-  margin: -.2ex .15em .2ex;
-  width: 16px;
-  height: 16px;
-
-  img {
-    width: auto;
-  }
-}
-
-.reply-indicator {
-  border-radius: 4px 4px 0 0;
-  position: relative;
-  bottom: -2px;
-  background: $lighter-turquoise;
-  padding: 10px;
-
-  .reply-indicator__display-name {
-    color: $base2;
-  }
-}
-
-.status__content, .reply-indicator__content {
+// éléments communs contenus d'un toot courant
+// et dans contenu du rappel du toot dans saisie
+.status__content,
+.reply-indicator__content {
   margin-top: .25rem;
   font-size: .875rem;
   line-height: 1.33;
@@ -291,19 +209,29 @@
   overflow: hidden;
   white-space: pre-wrap;
 
-  .emojione {
-    width: 18px;
-    height: 18px;
-  }
-
   p {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+
+      .fa {
+        color: lighten($base2, 40%);
+      }
+    }
+  }
+}
+
+// toots
+.status__content {
   a {
     color: $accent;
     text-decoration: none;
@@ -333,37 +261,18 @@
     }
   }
 
-  .status__content__spoiler-link {
+  a.status__content__spoiler-link {
     background: $base4;
+    padding: .25rem .5rem;
+    color: $light-txt;
 
     &:hover {
-      background: lighten($base3, 15%);
+      background: $base3;
       text-decoration: none;
     }
   }
 }
 
-.reply-indicator__content {
-  a,
-  a.mention,
-  a.hashtag {
-    color: inherit;
-  }
-}
-
-// bouton plier/déplier/spoiler
-a.status__content__spoiler-link {
-  display: inline-block;
-  border-radius: 2px;
-  color: $lightest;
-  font-weight: 500;
-  font-size: .75rem;
-  padding: .25rem .5rem;
-  text-transform: uppercase;
-  line-height: inherit;
-}
-
-// toots
 .status {
   padding: .5rem;
   padding-left: 4rem;
@@ -377,7 +286,7 @@ a.status__content__spoiler-link {
   }
 
   .status__display-name {
-    color: $lightest;
+    color: $muted-txt;
   }
 
   &.light {
@@ -418,6 +327,18 @@ a.status__content__spoiler-link {
   }
 }
 
+// bouton plier/déplier/spoiler
+.status__content__spoiler-link {
+  display: inline-block;
+  border-radius: 2px;
+  color: $lightest;
+  font-weight: 500;
+  font-size: .75rem;
+  padding: .25rem .5rem;
+  text-transform: uppercase;
+  line-height: inherit;
+}
+
 .status-check-box {
   border-bottom: 1px solid lighten($base2, 8%);
 
@@ -426,7 +347,7 @@ a.status__content__spoiler-link {
   }
 }
 
-// boost sur la home
+// infos d'un boost sur la home
 .status__prepend {
   margin-left: 4rem;
   color: $muted-txt;
@@ -436,17 +357,129 @@ a.status__content__spoiler-link {
   position: relative;
 
   .status__display-name strong {
-    color: $lightest;
+    color: $muted-txt;
   }
 }
 
+// Colonne 1, saisie des messages
+.compose-form__warning {
+  color: $gray-light;
+  margin-bottom: 1rem;
+  border: 1px solid $gray-soft;
+  padding: .5rem;
+  border-radius: .25rem;
+  font-size: .75rem;
+  font-weight: 400;
+
+  strong {
+    color: $lightest;
+    font-weight: 500;
+  }
+}
+
+.compose-form__modifiers {
+  color: $base2;
+  font-family: inherit;
+  font-size: .875rem;
+  background: $lightest;
+  border-radius: 0 0 .25rem 0;
+}
+
+.compose-form__buttons {
+  padding: .5rem;
+  background: $gray-light;
+  box-shadow: inset 0 .25rem .25rem rgba($darkest, 0.05);
+  border-radius: 0 0 .25rem .25rem;
+  display: flex;
+  color: $base2;
+
+  .icon-button {
+    box-sizing: content-box;
+    padding: 0 .25rem;
+  }
+}
+
+.compose-form__label {
+  display: block;
+  line-height: 1.5;
+  vertical-align: middle;
+
+  &.with-border {
+    border-top: 1px solid $base2;
+    padding-top: .5rem;
+  }
+
+  .compose-form__label__text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    color: $gray-soft;
+  }
+}
+
+.compose-form__textarea,
+.follow-form__input {
+  background: $lightest;
+
+  &:disabled {
+    background: $gray-light;
+  }
+}
+
+.emojione {
+  display: inline-block;
+  font-size: inherit;
+  vertical-align: middle;
+  margin: -.2ex .15rem .2ex;
+  width: 1rem;
+  height: 1rem;
+
+  img {
+    width: auto;
+  }
+}
+
+.reply-indicator {
+  border-radius: .25rem .25rem 0 0;
+  position: relative;
+  bottom: -2px;
+  background: $lighter-turquoise;
+  padding: .5rem;
+
+  .reply-indicator__display-name {
+    color: $base2;
+  }
+}
+
+.reply-indicator__content {
+  .emojione {
+    width: 18px;
+    height: 18px;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: inherit;
+
+    &.mention,
+    &.hashtag {
+      color: inherit;
+    }
+  }
+}
+
+// détail d'un toot (colonne 4)
 .detailed-status {
   border-top: 1px solid lighten($base2, 8%);
   background: lighten($base1, 4%);
 
   .status__content {
-    font-size: 1.25rem;
-    line-height: 1.25;
+    font-size: 1.125rem;
+    line-height: 1.33;
 
     .emojione {
       width: 22px;
@@ -480,6 +513,7 @@ a.status__content__spoiler-link {
   }
 }
 
+// Notif d'un follow
 .account {
   padding: 10px;
   border-bottom: 1px solid lighten($base1,8%);
@@ -582,7 +616,7 @@ a.status__content__spoiler-link {
   text-decoration: none;
 }
 
-.status__display-name, .account__display-name {
+.status__display-name {
   strong {
     color: $lightest;
   }
@@ -623,12 +657,12 @@ a.status__content__spoiler-link {
 }
 
 .muted {
-  .status__content p, .status__content a {
-    color: lighten($base2, 35%);
-  }
-
-  .status__display-name strong {
-    color: lighten($base2, 35%);
+  .status__content p,
+  .status__content a,
+  .status__display-name strong,
+  .status a.mention
+  {
+    color: lighten($base2, 25%);
   }
 
   .status__avatar {
@@ -651,7 +685,6 @@ a.status__content__spoiler-link {
   padding: .5rem 0;
   padding-bottom: 0;
   cursor: default;
-  color: $light-accent;
   font-size: .875rem;
   position: relative;
 
@@ -902,14 +935,18 @@ a.status__content__spoiler-link {
     margin: .5rem 0 0 0;
 
     &:first-child {
-      margin-left: .25rem;
-      padding-left: .5rem;
+      margin-left: 0;
+      padding-left: 0;
       border: none;
     }
 
     &:last-child {
-      padding-right: .5rem;
+      padding-right: 0;
     }
+  }
+
+  .drawer:first-child {
+      margin-left: .25em;
   }
 }
 
@@ -1068,6 +1105,7 @@ a.status__content__spoiler-link {
   overflow-x: hidden;
   flex: 1 1 auto;
   -webkit-overflow-scrolling: touch;
+  padding-right: .5rem;
 
   &.optionally-scrollable {
     overflow-y: auto;
@@ -1383,14 +1421,18 @@ button.icon-button.active i.fa-retweet {
   }
 
   &.active .fa {
-    color: $accent;
+    color: $light-txt;
     text-shadow: 0 0 10px rgba($vibrant, 0.4);
   }
 }
 
-.column-header + div,.column-icon {
+.column-header + div {
   line-height: 1em;
   margin-top: -.25rem;
+  }
+
+.column-header + div,.column-icon {
+  line-height: 1em;
   }
 
 .loading-indicator {
