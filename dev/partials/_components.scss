@@ -55,14 +55,26 @@
 
 .column-icon-clear {
   font-size: 1rem;
-  padding: 1rem;
+  padding: 1rem .25rem;
   position: absolute;
-  right: 3rem;
+  right: 2rem;
   top: .25em;
   cursor: pointer;
   z-index: 2;
 }
 
+.column-header + div,
+.column-icon {
+  line-height: 1;
+  margin-top: -.33rem;
+  }
+
+.column-icon[title^="Clear"] {
+  margin-top: 0;
+}
+
+
+// icones actions toots
 .icon-button {
   display: inline-block;
   padding: 0;
@@ -1426,14 +1438,7 @@ button.icon-button.active i.fa-retweet {
   }
 }
 
-.column-header + div {
-  line-height: 1em;
-  margin-top: -.25rem;
-  }
 
-.column-header + div,.column-icon {
-  line-height: 1em;
-  }
 
 .loading-indicator {
   color: $gray-light;
