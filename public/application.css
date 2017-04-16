@@ -1268,6 +1268,20 @@ code {
   z-index: 2;
 }
 
+.column-back-button {
+  padding: 1.125rem;
+  font-size: 1rem;
+  background: #393e4e;
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: #52abaf;
+  z-index: 3;
+  margin-top: -.75em;
+}
+.column-back-button:hover {
+  text-decoration: underline;
+}
+
 .icon-button {
   display: inline-block;
   padding: 0;
@@ -2100,20 +2114,6 @@ code {
 }
 .scrollable.optionally-scrollable {
   overflow-y: auto;
-}
-
-.column-back-button {
-  padding: 1.125rem;
-  font-size: 1rem;
-  background: #393e4e;
-  flex: 0 0 auto;
-  cursor: pointer;
-  color: #52abaf;
-  z-index: 3;
-  margin-top: -.25em;
-}
-.column-back-button:hover {
-  text-decoration: underline;
 }
 
 .react-toggle {

@@ -167,6 +167,21 @@
   z-index: 2;
 }
 
+.column-back-button {
+  padding: 1.125rem;
+  font-size: 1rem;
+  background: $base2;
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: $accent;
+  z-index: 3;
+  margin-top: -.75em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 
 // icones actions toots
 .icon-button {
@@ -1149,21 +1164,6 @@
 
   &.optionally-scrollable {
     overflow-y: auto;
-  }
-}
-
-.column-back-button {
-  padding: 1.125rem;
-  font-size: 1rem;
-  background: $base2;
-  flex: 0 0 auto;
-  cursor: pointer;
-  color: $accent;
-  z-index: 3;
-  margin-top: -.25em;
-
-  &:hover {
-    text-decoration: underline;
   }
 }
 
