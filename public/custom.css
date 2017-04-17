@@ -1240,8 +1240,7 @@ code {
 .collapsable-collapsed,
 .collapsable,
 .column-icon,
-.column-icon-clear,
-.column-back-button {
+.column-icon-clear {
   line-height: 1;
   background: transparent;
 }
@@ -1271,16 +1270,21 @@ code {
 }
 
 .column-back-button {
-  padding: 1.125rem;
+  background-color: #393e4e;
+  padding: 1rem;
   font-size: 1rem;
   flex: 0 0 auto;
   cursor: pointer;
   color: #d0d3dd;
   z-index: 3;
-  margin-top: -.75em;
 }
 .column-back-button:hover {
   text-decoration: underline;
+}
+.column-header + div .column-back-button {
+  background-color: transparent;
+  line-height: 1;
+  margin-top: -.5rem;
 }
 
 .icon-button {

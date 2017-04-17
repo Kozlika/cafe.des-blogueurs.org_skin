@@ -135,8 +135,7 @@
 .collapsable-collapsed,
 .collapsable,
 .column-icon,
-.column-icon-clear,
-.column-back-button {
+.column-icon-clear {
   line-height: 1;
   background: transparent;
 }
@@ -167,16 +166,22 @@
 }
 
 .column-back-button {
-  padding: 1.125rem;
+  background-color: $bg2;
+  padding: 1rem;
   font-size: 1rem;
   flex: 0 0 auto;
   cursor: pointer;
   color: $base2-txt;
   z-index: 3;
-  margin-top: -.75em;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  .column-header + div & {
+    background-color: transparent;
+    line-height: 1;
+    margin-top: -.5rem;
   }
 }
 
