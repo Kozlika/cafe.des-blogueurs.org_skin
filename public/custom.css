@@ -555,10 +555,10 @@ code {
 }
 .card .counter {
   width: 5.5em;
-  color: #8d95ac;
+  color: #abb0c2;
   padding: 5px 10px 0px;
   margin-bottom: 10px;
-  border-right: 1px solid #8d95ac;
+  border-right: 1px solid #abb0c2;
   cursor: default;
   position: relative;
 }
@@ -572,7 +572,7 @@ code {
   bottom: -10px;
   left: 0;
   width: 100%;
-  border-bottom: 4px solid #8d95ac;
+  border-bottom: 4px solid #abb0c2;
   opacity: 0.5;
   transition: all 0.8s ease;
 }
@@ -605,7 +605,7 @@ code {
   font-size: .875rem;
   line-height: 1.125;
   padding: .25rem .5rem;
-  color: #8d95ac;
+  color: #abb0c2;
   order: 1;
 }
 @media screen and (max-width: 30em) {
@@ -668,7 +668,7 @@ code {
 }
 .pagination .disabled {
   cursor: default;
-  color: #8d95ac;
+  color: #abb0c2;
 }
 @media screen and (max-width: 20em) {
   .pagination {
@@ -1286,7 +1286,7 @@ code {
 .icon-button {
   display: inline-block;
   padding: 0;
-  color: #8d95ac;
+  color: #abb0c2;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1337,7 +1337,7 @@ code {
 }
 
 .text-icon-button {
-  color: #8d95ac;
+  color: #abb0c2;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1353,7 +1353,7 @@ code {
   transition: all 200ms ease-out;
 }
 .text-icon-button.disabled {
-  color: #8d95ac;
+  color: #abb0c2;
   cursor: default;
 }
 .text-icon-button.active {
@@ -1421,7 +1421,7 @@ code {
 }
 .status__content a:hover .fa,
 .reply-indicator__content a:hover .fa {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 
 .status__content a {
@@ -1432,7 +1432,7 @@ code {
   text-decoration: underline;
 }
 .status__content a:hover .fa {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 .status__content a.mention {
   color: #e0ffff;
@@ -1444,7 +1444,7 @@ code {
   text-decoration: underline;
 }
 .status__content a .fa {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 .status__content a.status__content__spoiler-link {
   background: #495064;
@@ -1465,10 +1465,10 @@ code {
   cursor: default;
 }
 .status .status__relative-time {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 .status .status__display-name {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 .status.light .status__relative-time {
   color: #93abc3;
@@ -1516,14 +1516,14 @@ code {
 
 .status__prepend {
   margin-left: 4rem;
-  color: #8d95ac;
+  color: #abb0c2;
   padding: .5rem 0;
   padding-bottom: .125rem;
   font-size: .875rem;
   position: relative;
 }
 .status__prepend .status__display-name strong {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 
 .compose-form__warning {
@@ -1639,7 +1639,7 @@ code {
 
 .detailed-status__meta {
   margin-top: 1rem;
-  color: #8d95ac;
+  color: #abb0c2;
   font-size: .875rem;
   line-height: 1.25;
 }
@@ -1658,7 +1658,7 @@ code {
   font-size: 14px;
 }
 .reply-indicator__content a {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 
 .account {
@@ -1741,7 +1741,7 @@ code {
   color: #fff;
 }
 .account__action-bar__tab abbr {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 
 .status__display-name, .status__relative-time, .detailed-status__display-name, .detailed-status__datetime, .detailed-status__application, .account__display-name {
@@ -1780,7 +1780,7 @@ code {
 .muted .status__content a,
 .muted .status__display-name strong,
 .muted .status a.mention {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 .muted .status__avatar {
   opacity: 0.5;
@@ -1791,7 +1791,7 @@ code {
 }
 .muted a.status__content__spoiler-link:hover, .muted a.status__content__spoiler-link:focus {
   background: #393e4e;
-  color: #8d95ac;
+  color: #abb0c2;
   text-decoration: none;
 }
 
@@ -1923,7 +1923,7 @@ code {
 .static-content {
   padding: 10px;
   padding-top: 20px;
-  color: #8d95ac;
+  color: #abb0c2;
 }
 .static-content h1 {
   font-size: 16px;
@@ -2298,7 +2298,7 @@ code {
   color: #d0d3dd;
 }
 .getting-started a {
-  color: #8d95ac;
+  color: #abb0c2;
 }
 
 .setting-text {
@@ -2338,7 +2338,7 @@ button.icon-button.active i.fa-retweet {
   font-size: 14px;
   border: 1px solid #4a5166;
   border-radius: 4px;
-  color: #8d95ac;
+  color: #abb0c2;
   margin-top: 14px;
   text-decoration: none;
   overflow: hidden;
@@ -2368,7 +2368,7 @@ button.icon-button.active i.fa-retweet {
 
 .load-more {
   display: block;
-  color: #8d95ac;
+  color: #abb0c2;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -2458,7 +2458,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .empty-column-indicator {
-  color: #8d95ac;
+  color: #abb0c2;
   background: #393e4e;
   text-align: center;
   padding: 20px;
@@ -2708,7 +2708,7 @@ button.icon-button.active i.fa-retweet {
 
 .upload-progress {
   padding: 10px;
-  color: #8d95ac;
+  color: #abb0c2;
   overflow: hidden;
   display: flex;
 }
@@ -2899,7 +2899,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .search-results__header {
-  color: #8d95ac;
+  color: #abb0c2;
   background: #3d4354;
   border-bottom: 1px solid #303542;
   padding: 1rem .5rem;
@@ -2989,7 +2989,7 @@ button.icon-button.active i.fa-retweet {
 .boost-modal__action-bar > div {
   flex: 1 1 auto;
   text-align: right;
-  color: #8d95ac;
+  color: #abb0c2;
   padding-right: 10px;
 }
 .boost-modal__action-bar .button {
