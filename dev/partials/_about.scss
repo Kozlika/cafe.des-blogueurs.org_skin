@@ -1,8 +1,9 @@
+// instance > about
 .about-body {
   .wrapper {
     max-width: 40em;
     margin: 0 auto;
-    color: $gray-soft;
+    color: $gray6;
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -41,7 +42,7 @@
     line-height: 28px;
     font-weight: 400;
     margin-bottom: 20px;
-    color: $gray-light;
+    color: $gray7;
   }
 
   ul, ol {
@@ -76,8 +77,8 @@
     display: inline-block;
     padding: 7px 7px 5px 7px;
     margin: 0 2px;
-    background: $gray-soft;
-    color: $base2;
+    background: $gray6;
+    color: $contrast-txt;
     font: 16px/16px 'Montserrat', sans-serif;
     font-weight: 300;
   }
@@ -103,7 +104,7 @@
       line-height: 36px;
 
       a {
-        color: $gray-soft;
+        color: $gray6;
         text-decoration: underline;
       }
     }
@@ -120,12 +121,13 @@
   }
 }
 
+// instance > about > more
 .information-board {
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid lighten($base2, 10%);
-  border-bottom: 1px solid lighten($base2, 10%);
+  border-top: 1px solid $border3;
+  border-bottom: 1px solid $border3;
   padding-right: 14px;
 
   .section {
@@ -142,7 +144,7 @@
       font-size: 16px;
 
       &:last-child {
-        color: $gray-light;
+        color: $gray7;
         font-size: 14px;
       }
     }
@@ -198,7 +200,7 @@
 
     .username {
       display: block;
-      color: $gray-soft;
+      color: $gray6;
     }
   }
 }
@@ -226,14 +228,14 @@
   }
 
   .sidebar {
-    border-left: 1px solid lighten($base2, 10%);
-    width: 180px;
+    border-left: 1px solid $border3;
+    width: 12rem;
     flex: 0 0 auto;
   }
 
   .panel {
     .panel-header {
-      background: lighten($base2, 10%);
+      background: $bg3;
       padding: 7px 14px;
       text-transform: uppercase;
       font-size: 12px;
@@ -268,7 +270,7 @@
 
             &:hover {
               color: $lightest;
-              background-color: darken($base2, 5%);
+              background-color: darken($sbg2, 5%);
               transition: all 100ms linear;
             }
 
@@ -290,7 +292,7 @@
     flex-direction: column;
 
     .sidebar {
-      border: 1px solid lighten($base2, 10%);
+      border: 1px solid lighten($sbg2, 10%);
       width: auto;
     }
   }
@@ -333,9 +335,9 @@
   }
 
   .simple_form, .closed-registrations-message {
-    width: 300px;
+    width: 20rem;
     flex: 0 0 auto;
-    background: rgba(darken($base2, 7%), 0.5);
+    background: rgba(darken($sbg2, 7%), 0.5);
     padding: 14px;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba($darkest, 0.4);
@@ -348,7 +350,7 @@
       text-align: center;
 
       a {
-        color: $gray-light;
+        color: $base2-txt;
       }
     }
   }

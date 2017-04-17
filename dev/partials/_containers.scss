@@ -1,9 +1,13 @@
 // Affichage hors instance
 .container {
   width: 100%;
-  max-width: 39em;
+  max-width: 46em;
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.admin .container {
+  max-width: 39em;
 }
 
 .logo-container {

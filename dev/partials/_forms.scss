@@ -16,7 +16,7 @@ code {
 
   span.hint {
     display: block;
-    color: $gray-soft;
+    color: $gray6;
     font-size: .75em;
     margin-top: .25rem;
   }
@@ -92,7 +92,7 @@ code {
     background: transparent;
     box-sizing: border-box;
     border: 0;
-    border-bottom: 2px solid $gray-soft;
+    border-bottom: 2px solid $gray6;
     border-radius: 2px 2px 0 0;
     padding: .5rem .25rem;
     font-size: 1rem;
@@ -185,8 +185,8 @@ code {
 }
 
 .flash-message {
-  background: $base1;
-  color: $gray-soft;
+  background: $bg1;
+  color: $gray6;
   border-radius: .25rem;
   padding: 1rem .5rem;
   margin-bottom: 30px;
@@ -215,7 +215,7 @@ code {
 .oauth-prompt, .follow-prompt {
   margin-bottom: 1.75rem;
   text-align: center;
-  color: $gray-soft;
+  color: $gray6;
 
   h2 {
     font-size: 1rem;
@@ -223,7 +223,7 @@ code {
   }
 
   strong {
-    color: $gray-light;
+    color: $gray7;
     font-weight: 500;
   }
 }
@@ -248,7 +248,7 @@ code {
 
 .qr-alternative {
   margin-left: .5rem;
-  color: $gray-soft;
+  color: $gray6;
 
   samp {
     display: block;

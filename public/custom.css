@@ -136,9 +136,13 @@ body.admin {
 
 .container {
   width: 100%;
-  max-width: 39em;
+  max-width: 46em;
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.admin .container {
+  max-width: 39em;
 }
 
 .logo-container {
@@ -476,23 +480,22 @@ code {
 }
 
 .card {
-  background: #393e4e;
-  background-size: cover;
-  padding: 60px 0;
-  padding-bottom: 0;
-  border-radius: 4px 4px 0 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  background: #476481;
+  padding: 5rem 0 0;
+  border-radius: .25rem .25rem 0 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 44em) {
   .card {
     border-radius: 0;
     box-shadow: none;
   }
 }
 .card:after {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(rgba(52, 73, 94, 0.5), rgba(52, 73, 94, 0.8));
   display: block;
   content: "";
   position: absolute;
@@ -515,14 +518,14 @@ code {
 }
 .card .name small {
   display: block;
-  font-size: 14px;
-  color: #009092;
+  font-size: .875rem;
+  color: #fff;
   font-weight: 400;
 }
 .card .avatar {
   width: 120px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   position: relative;
   z-index: 2;
 }
@@ -540,7 +543,7 @@ code {
 }
 .card .details {
   display: flex;
-  margin-top: 30px;
+  margin-top: 1.5rem;
   position: relative;
   z-index: 2;
   flex-direction: row;
@@ -551,11 +554,11 @@ code {
   order: 0;
 }
 .card .counter {
-  width: 80px;
-  color: #93abc3;
+  width: 5.5em;
+  color: #8d95ac;
   padding: 5px 10px 0px;
   margin-bottom: 10px;
-  border-right: 1px solid #93abc3;
+  border-right: 1px solid #8d95ac;
   cursor: default;
   position: relative;
 }
@@ -569,7 +572,7 @@ code {
   bottom: -10px;
   left: 0;
   width: 100%;
-  border-bottom: 4px solid #93abc3;
+  border-bottom: 4px solid #8d95ac;
   opacity: 0.5;
   transition: all 0.8s ease;
 }
@@ -586,7 +589,7 @@ code {
   color: inherit;
 }
 .card .counter .counter-label {
-  font-size: 12px;
+  font-size: .75rem;
   text-transform: uppercase;
   display: block;
   margin-bottom: 5px;
@@ -594,18 +597,18 @@ code {
 }
 .card .counter .counter-number {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
 }
 .card .bio {
   flex: 1;
-  font-size: 14px;
-  line-height: 18px;
-  padding: 5px 10px;
-  color: #d0d3dd;
+  font-size: .875rem;
+  line-height: 1.125;
+  padding: .25rem .5rem;
+  color: #8d95ac;
   order: 1;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 30em) {
   .card .details {
     display: block;
   }
@@ -665,9 +668,9 @@ code {
 }
 .pagination .disabled {
   cursor: default;
-  color: #4f556b;
+  color: #8d95ac;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 20em) {
   .pagination {
     padding: 30px 20px;
   }
@@ -688,7 +691,7 @@ code {
   padding-bottom: 10px;
   overflow: hidden;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 40em) {
   .accounts-grid {
     border-radius: 0;
     box-shadow: none;
@@ -804,7 +807,7 @@ code {
   text-decoration: none;
 }
 .account-card .account__header__content {
-  font-size: 14px;
+  font-size: .875rem;
   color: #393e4e;
 }
 
@@ -1199,9 +1202,8 @@ code {
   transition: all 100ms ease-in;
 }
 .button:hover, .button:active, .button:focus {
-  background-color: #00ced1;
+  background-color: #00c2c5;
   transition: all 200ms ease-out;
-  color: #fff;
 }
 .button:disabled {
   background-color: #5a637b;
@@ -1238,19 +1240,19 @@ code {
 .collapsable-collapsed,
 .collapsable,
 .column-icon,
-.column-icon-clear {
+.column-icon-clear,
+.column-back-button {
   line-height: 1;
+  background: transparent;
 }
 
 .collapsable-collapsed {
   color: #93abc3;
-  background: #393e4e;
   margin-top: -.33rem;
 }
 
 .collapsable {
   color: #fff;
-  background: #393e4e;
   margin-top: -.33rem;
 }
 .collapsable:hover {
@@ -1271,10 +1273,9 @@ code {
 .column-back-button {
   padding: 1.125rem;
   font-size: 1rem;
-  background: #393e4e;
   flex: 0 0 auto;
   cursor: pointer;
-  color: #52abaf;
+  color: #d0d3dd;
   z-index: 3;
   margin-top: -.75em;
 }
@@ -1285,14 +1286,14 @@ code {
 .icon-button {
   display: inline-block;
   padding: 0;
-  color: #5a637b;
+  color: #8d95ac;
   border: none;
   background: transparent;
   cursor: pointer;
   transition: all 100ms ease-in;
 }
 .icon-button:hover, .icon-button:active, .icon-button:focus {
-  color: #495064;
+  color: #fff;
   transition: all 200ms ease-out;
 }
 .icon-button.disabled {
@@ -1336,7 +1337,7 @@ code {
 }
 
 .text-icon-button {
-  color: #6a7592;
+  color: #8d95ac;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1348,11 +1349,11 @@ code {
   transition: all 100ms ease-in;
 }
 .text-icon-button:hover, .text-icon-button:active, .text-icon-button:focus {
-  color: #5a637b;
+  color: #393e4e;
   transition: all 200ms ease-out;
 }
 .text-icon-button.disabled {
-  color: #495064;
+  color: #8d95ac;
   cursor: default;
 }
 .text-icon-button.active {
@@ -1420,7 +1421,7 @@ code {
 }
 .status__content a:hover .fa,
 .reply-indicator__content a:hover .fa {
-  color: #9ca3b7;
+  color: #8d95ac;
 }
 
 .status__content a {
@@ -1431,7 +1432,7 @@ code {
   text-decoration: underline;
 }
 .status__content a:hover .fa {
-  color: #9ca3b7;
+  color: #8d95ac;
 }
 .status__content a.mention {
   color: #e0ffff;
@@ -1443,15 +1444,15 @@ code {
   text-decoration: underline;
 }
 .status__content a .fa {
-  color: #7f87a1;
+  color: #8d95ac;
 }
 .status__content a.status__content__spoiler-link {
-  background: #5a637b;
+  background: #495064;
   padding: .25rem .5rem;
   color: #d0d3dd;
 }
 .status__content a.status__content__spoiler-link:hover {
-  background: #495064;
+  background: #393e4e;
   text-decoration: none;
 }
 
@@ -1464,10 +1465,10 @@ code {
   cursor: default;
 }
 .status .status__relative-time {
-  color: #6a7592;
+  color: #8d95ac;
 }
 .status .status__display-name {
-  color: #6a7592;
+  color: #8d95ac;
 }
 .status.light .status__relative-time {
   color: #93abc3;
@@ -1515,14 +1516,14 @@ code {
 
 .status__prepend {
   margin-left: 4rem;
-  color: #6a7592;
+  color: #8d95ac;
   padding: .5rem 0;
   padding-bottom: .125rem;
   font-size: .875rem;
   position: relative;
 }
 .status__prepend .status__display-name strong {
-  color: #6a7592;
+  color: #8d95ac;
 }
 
 .compose-form__warning {
@@ -1602,7 +1603,7 @@ code {
   border-radius: .25rem .25rem 0 0;
   position: relative;
   bottom: -2px;
-  background: #dbfaf4;
+  background: #e0ffff;
   padding: .5rem;
 }
 .reply-indicator .reply-indicator__display-name {
@@ -1624,7 +1625,7 @@ code {
 }
 
 .detailed-status {
-  border-top: 1px solid #4a5166;
+  border-top: 1px solid #495064;
   background: #313543;
 }
 .detailed-status .status__content {
@@ -1638,7 +1639,7 @@ code {
 
 .detailed-status__meta {
   margin-top: 1rem;
-  color: #737c99;
+  color: #8d95ac;
   font-size: .875rem;
   line-height: 1.25;
 }
@@ -1647,8 +1648,8 @@ code {
   background: #313543;
   display: flex;
   flex-direction: row;
-  border-top: 1px solid #4a5166;
-  border-bottom: 1px solid #4a5166;
+  border-top: 1px solid #495064;
+  border-bottom: 1px solid #495064;
   padding: 10px 0;
 }
 
@@ -1657,12 +1658,12 @@ code {
   font-size: 14px;
 }
 .reply-indicator__content a {
-  color: #646d89;
+  color: #8d95ac;
 }
 
 .account {
   padding: 10px;
-  border-bottom: 1px solid #393f4f;
+  border-bottom: 1px solid #393e4e;
 }
 .account .account__display-name {
   flex: 1 1 auto;
@@ -1740,7 +1741,7 @@ code {
   color: #fff;
 }
 .account__action-bar__tab abbr {
-  color: #737c99;
+  color: #8d95ac;
 }
 
 .status__display-name, .status__relative-time, .detailed-status__display-name, .detailed-status__datetime, .detailed-status__application, .account__display-name {
@@ -1770,25 +1771,27 @@ code {
   display: block;
 }
 .detailed-status__display-name strong {
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
 }
 
+.muted .status__content,
 .muted .status__content p,
 .muted .status__content a,
 .muted .status__display-name strong,
 .muted .status a.mention {
-  color: #707997;
+  color: #8d95ac;
 }
 .muted .status__avatar {
   opacity: 0.5;
 }
 .muted a.status__content__spoiler-link {
-  background: #8d95ac;
-  color: #42475a;
+  background: #495064;
+  color: #d0d3dd;
 }
-.muted a.status__content__spoiler-link:hover {
-  background: #7c849f;
+.muted a.status__content__spoiler-link:hover, .muted a.status__content__spoiler-link:focus {
+  background: #393e4e;
+  color: #8d95ac;
   text-decoration: none;
 }
 
@@ -1920,7 +1923,7 @@ code {
 .static-content {
   padding: 10px;
   padding-top: 20px;
-  color: #737c99;
+  color: #8d95ac;
 }
 .static-content h1 {
   font-size: 16px;
@@ -2295,7 +2298,7 @@ code {
   color: #d0d3dd;
 }
 .getting-started a {
-  color: #737c99;
+  color: #8d95ac;
 }
 
 .setting-text {
@@ -2335,7 +2338,7 @@ button.icon-button.active i.fa-retweet {
   font-size: 14px;
   border: 1px solid #4a5166;
   border-radius: 4px;
-  color: #737c99;
+  color: #8d95ac;
   margin-top: 14px;
   text-decoration: none;
   overflow: hidden;
@@ -2365,7 +2368,7 @@ button.icon-button.active i.fa-retweet {
 
 .load-more {
   display: block;
-  color: #737c99;
+  color: #8d95ac;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -2378,7 +2381,7 @@ button.icon-button.active i.fa-retweet {
   text-align: center;
   font-size: 16px;
   font-weight: 500;
-  color: #5b637d;
+  color: #393e4e;
   padding-top: 210px;
   background: url('/dev/images/mastodon-not-found.png?1492136576') no-repeat center -50px;
   cursor: default;
@@ -2455,7 +2458,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .empty-column-indicator {
-  color: #646d89;
+  color: #8d95ac;
   background: #393e4e;
   text-align: center;
   padding: 20px;
@@ -2705,7 +2708,7 @@ button.icon-button.active i.fa-retweet {
 
 .upload-progress {
   padding: 10px;
-  color: #737c99;
+  color: #8d95ac;
   overflow: hidden;
   display: flex;
 }
@@ -2896,7 +2899,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .search-results__header {
-  color: #737c99;
+  color: #8d95ac;
   background: #3d4354;
   border-bottom: 1px solid #303542;
   padding: 1rem .5rem;
@@ -2986,7 +2989,7 @@ button.icon-button.active i.fa-retweet {
 .boost-modal__action-bar > div {
   flex: 1 1 auto;
   text-align: right;
-  color: #888fa8;
+  color: #8d95ac;
   padding-right: 10px;
 }
 .boost-modal__action-bar .button {
@@ -3098,8 +3101,8 @@ button.icon-button.active i.fa-retweet {
   margin: 20px 0;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #4f556b;
-  border-bottom: 1px solid #4f556b;
+  border-top: 1px solid #495064;
+  border-bottom: 1px solid #495064;
   padding-right: 14px;
 }
 .information-board .section {
@@ -3184,12 +3187,12 @@ button.icon-button.active i.fa-retweet {
   padding-right: 14px;
 }
 .sidebar-layout .sidebar {
-  border-left: 1px solid #4f556b;
-  width: 180px;
+  border-left: 1px solid #495064;
+  width: 12rem;
   flex: 0 0 auto;
 }
 .sidebar-layout .panel .panel-header {
-  background: #4f556b;
+  background: #495064;
   padding: 7px 14px;
   text-transform: uppercase;
   font-size: 12px;
@@ -3220,7 +3223,7 @@ button.icon-button.active i.fa-retweet {
 }
 .sidebar-layout .panel .panel-list ul li a:hover {
   color: #fff;
-  background-color: #2e323f;
+  background-color: #2b3c4e;
   transition: all 100ms linear;
 }
 .sidebar-layout .panel .panel-list ul li a.selected {
@@ -3235,7 +3238,7 @@ button.icon-button.active i.fa-retweet {
     flex-direction: column;
   }
   .sidebar-layout .sidebar {
-    border: 1px solid #4f556b;
+    border: 1px solid #46637f;
     width: auto;
   }
 }
@@ -3272,9 +3275,9 @@ button.icon-button.active i.fa-retweet {
   height: auto;
 }
 .screenshot-with-signup .simple_form, .screenshot-with-signup .closed-registrations-message {
-  width: 300px;
+  width: 20rem;
   flex: 0 0 auto;
-  background: rgba(42, 46, 57, 0.5);
+  background: rgba(39, 55, 71, 0.5);
   padding: 14px;
   border-radius: 4px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);

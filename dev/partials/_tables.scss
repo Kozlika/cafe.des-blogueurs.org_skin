@@ -9,13 +9,13 @@
     padding: 8px;
     line-height: 18px;
     vertical-align: top;
-    border-top: 1px solid $base2;
+    border-top: 1px solid $border2;
     text-align: left;
   }
 
   & > thead > tr > th {
     vertical-align: bottom;
-    border-bottom: 2px solid $base2;
+    border-bottom: 2px solid $border2;
     border-top: 0;
     font-weight: 500;
   }
@@ -25,7 +25,7 @@
   }
 
   & > tbody > tr:nth-child(odd) > td, & > tbody > tr:nth-child(odd) > th {
-    background: $base2;
+    background: $bg2;
   }
 
   a {

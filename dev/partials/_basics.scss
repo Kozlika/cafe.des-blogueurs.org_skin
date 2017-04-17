@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background: $body-bg-web;
+  background: $alt-body-bg;
   font-size: .875rem;
   line-height: 1.2857;
   font-weight: 400;
@@ -11,7 +11,7 @@ body {
   text-size-adjust: none;
 
   &.app-body {
-    background-color: $base1;
+    background-color: $bg1;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -29,11 +29,7 @@ body {
   }
 
   &.admin {
-    background-color: $slate-dark1;
-//    position: fixed;
-//    width: 100%;
-//    height: 100%;
-//    padding: 0;
+    background-color: $alt-body-bg;
   }
 
   @media screen and (max-width: 20em) {

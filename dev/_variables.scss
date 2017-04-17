@@ -1,52 +1,58 @@
 // PALETTE DE COULEURS
 // -------------------
 
-// Camaïeu pour les fonds de page/blocs
-// de la version connectée
-$gray-dark1:        #282c37;
-$gray-dark2:        #393e4e;
-$gray-dark3:        #495064;
-$gray-dark4:        #5a637b;
+// Palette du thème
+$gray1:             #282c37;
+$gray2:             #393e4e;
+$gray3:             #495064;
+$gray4:             #5a637b;
+$gray5:             #6a7592;
+$gray6:             #93abc3;
+$gray7:             #d0d3dd;
 
-// Camaïeu pour les fonds de la version web
-// consultation non connectée
-$slate-dark1:       #2c3e50;
-$slate-dark2:       #34495e;
-$slate-dark3:       #476481;
+$slate1:            #2c3e50;
+$slate2:            #34495e;
+$slate3:            #476481;
 
-// Texte
-// (n&b francs ici, peuvent être nuancés)
+$turquoise:         #009092;
+$blue-green:        #52abaf;
+$blue-light:        #e0ffff;
+
+$error:             #c0392b;
+$success:           #27ae60;
+
 $lightest:          #fff;
 $darkest:           #000;
-$gray-light:        #d0d3dd;
-$gray-soft:         #93abc3;
-$gray-medium:       #6a7592;
 
-// Messages système
-$error:             #c0392b; // error red
-$success:           #27ae60; // succ green
+// ------- theme ----------
+// main backgrounds
+$bg1:               $gray1;
+$bg2:               $gray2;
+$bg3:               $gray3;
+$bg4:               $gray4;
 
-// Autres couleurs
-$turquoise:         #00ced1;
-$darker-turquoise:  #009092;
-$lighter-turquoise: #dbfaf4;
-$blue-green:        #52abaf;
-$light-variant:     #e0ffff;
+// secondary backgrounds (admin, about…)
+$sbg1:              $slate1;
+$sbg2:              $slate2;
+$sbg3:              $slate3;
 
-// application
-$base1:             $gray-dark1;
-$base2:             $gray-dark2;
-$base3:             $gray-dark3;
-$base4:             $gray-dark4;
+// borders
+$border1:           $gray1;
+$border2:           $gray2;
+$border3:           $gray3;
 
-$body-bg:           $base1;
-$body-bg-web:       $slate-dark1;
+// text colors
+$base-txt:          $lightest;
+$base2-txt:         $gray7; // same with little mute
+$contrast-txt:      $gray2; // inverted backgrounds
 
-$body-txt:          $lightest;
-$muted-txt:         $gray-medium;
-$light-txt:         $gray-light;
-
-$vibrant:           $darker-turquoise;
-$button-bg-hover:   $turquoise;
+// all types colors
+$muted:             lighten($gray2, 35%);
 $accent:            $blue-green;
-$light-accent:      $light-variant;
+$light-accent:      $blue-light;
+$vibrant:           $turquoise;
+
+// ------ and there we go
+$body-bg:           $bg1;
+$alt-body-bg:       $sbg1;
+$body-txt:          $base-txt;
