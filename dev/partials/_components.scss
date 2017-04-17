@@ -225,14 +225,14 @@
   }
 
   &.inverted {
-    color: lighten($bg2, 33%);
+    color: lighten($contrast-txt, 15%);
 
     &:hover, &:active, &:focus {
-      color: lighten($bg2, 26%);
+      color: $vibrant;
     }
 
     &.active {
-      color: $vibrant;
+      color: $accent;
     }
 
     &.disabled {
@@ -255,7 +255,7 @@
 
 // pas trouvé où ça s'affiche
 .text-icon-button {
-  color: $muted;
+  color: lighten($contrast-txt, 15%);
   border: none;
   background: transparent;
   cursor: pointer;
@@ -267,7 +267,7 @@
   transition: all 100ms ease-in;
 
   &:hover, &:active, &:focus {
-    color: $contrast-txt;
+    color: $vibrant;
     transition: all 200ms ease-out;
   }
 

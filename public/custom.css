@@ -1319,13 +1319,13 @@ code {
   outline: 0 !important;
 }
 .icon-button.inverted {
-  color: #888fa8;
+  color: #59617a;
 }
 .icon-button.inverted:hover, .icon-button.inverted:active, .icon-button.inverted:focus {
-  color: #737c99;
+  color: #009092;
 }
 .icon-button.inverted.active {
-  color: #009092;
+  color: #52abaf;
 }
 .icon-button.inverted.disabled {
   color: #93abc3;
@@ -1342,7 +1342,7 @@ code {
 }
 
 .text-icon-button {
-  color: #abb0c2;
+  color: #59617a;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1354,7 +1354,7 @@ code {
   transition: all 100ms ease-in;
 }
 .text-icon-button:hover, .text-icon-button:active, .text-icon-button:focus {
-  color: #393e4e;
+  color: #009092;
   transition: all 200ms ease-out;
 }
 .text-icon-button.disabled {
