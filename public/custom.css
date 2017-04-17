@@ -1301,6 +1301,7 @@ code {
   cursor: default;
 }
 .icon-button.disabled .fa-envelope,
+.icon-button.disabled .fa-lock,
 .icon-button.disabled .fa-locked {
   color: salmon;
 }
