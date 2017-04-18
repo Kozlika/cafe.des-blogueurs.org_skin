@@ -1,5 +1,12 @@
 @import 'variables';
 
+/* Uncomment this lines in production
+@import 'fonts/roboto';
+@import 'fonts/roboto-mono';
+@import 'fonts/montserrat';
+@import 'font-awesome';
+*/
+
 @import 'partials/reset';
 @import 'partials/basics';
 @import 'partials/containers';

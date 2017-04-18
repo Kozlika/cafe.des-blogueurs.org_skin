@@ -1,3 +1,13 @@
+// Pour mémoire variables d'origine master mastodon
+$color1: #282c37; // darkest
+$color2: #d9e1e8; // lightest
+$color3: #9baec8; // lighter
+$color4: #2b90d9; // vibrant
+$color5: #ffffff; // white
+$color6: #df405a; // error red
+$color7: #79bd9a; // succ green
+$color8: #000000; // black
+
 // PALETTE DE COULEURS
 // -------------------
 
@@ -9,6 +19,7 @@ $gray4:             #5a637b;
 $gray5:             #6a7592;
 $gray6:             #93abc3;
 $gray7:             #d0d3dd;
+$gray8:             #e7e8ed;
 
 $slate1:            #2c3e50;
 $slate2:            #34495e;
@@ -21,8 +32,8 @@ $blue-light:        #e0ffff;
 $error:             #c0392b;
 $success:           #27ae60;
 
-$lightest:          #fff;
-$darkest:           #000;
+$lightest:          $gray8;
+$darkest:           $gray1;
 
 // ------- theme ----------
 // main backgrounds
@@ -30,6 +41,7 @@ $bg1:               $gray1;
 $bg2:               $gray2;
 $bg3:               $gray3;
 $bg4:               $gray4;
+$bg8:               $gray8;
 
 // secondary backgrounds (admin, about…)
 $sbg1:              $slate1;
@@ -56,3 +68,5 @@ $vibrant:           $turquoise;
 $body-bg:           $bg1;
 $alt-body-bg:       $sbg1;
 $body-txt:          $base-txt;
+
+
