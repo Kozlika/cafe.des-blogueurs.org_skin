@@ -1323,7 +1323,7 @@
 }
 
 .autosuggest-textarea__textarea {
-  height: 100px;
+  min-height: 10rem;
   background: $lightest;
   border-radius: 4px 4px 0 0;
   padding-bottom: 0;
