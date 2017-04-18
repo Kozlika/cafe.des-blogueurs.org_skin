@@ -130,10 +130,12 @@
   @media screen and (max-width: 40em) {
     display: block;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 
     .sidebar-wrapper, .content-wrapper {
       flex: 0 0 auto;
       height: auto;
+      overflow: initial;
     }
 
     .sidebar {
