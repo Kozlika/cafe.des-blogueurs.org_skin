@@ -25,7 +25,7 @@
     padding: .5rem;
   }
   @media screen and (min-width: 64.1em) {
-    padding: .5em 0;
+    padding: .25em;
   }
 }
 
@@ -982,7 +982,7 @@
 .drawer__tab {
   display: block;
   flex: 1 1 auto;
-  padding: .875rem 1rem;
+  padding: .94rem 1rem;
   color: $light-accent;
   text-decoration: none;
   text-align: center;
