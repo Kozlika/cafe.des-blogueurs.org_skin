@@ -31,6 +31,8 @@
 
 .drawer,
 .column {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -39,8 +41,6 @@
   padding: 0;
 
   @media screen and (min-width: 64.1em) {
-    display: flex;
-    flex-direction: column;
     border-left: 1px solid $border3;
 
     &:first-child {
@@ -1051,7 +1051,7 @@
 }
 
 .pseudo-drawer {
-  background: lighten($color1, 13%);
+  background: lighten($bg1, 13%);
   font-size: 13px;
   text-align: left;
 }
@@ -2109,8 +2109,8 @@ button.icon-button.active i.fa-retweet {
 }
 
 .onboarding-modal {
-  background: $color2;
-  color: $color1;
+  background: $bg8;
+  color: $contrast-txt;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -2160,7 +2160,7 @@ button.icon-button.active i.fa-retweet {
 
 .onboarding-modal__paginator {
   flex: 0 0 auto;
-  background: darken($color2, 8%);
+  background: darken($bg8, 8%);
   display: flex;
   padding: 25px;
 
@@ -2169,17 +2169,17 @@ button.icon-button.active i.fa-retweet {
   }
 
   a {
-    color: darken($color2, 34%);
+    color: darken($base-txt, 34%);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
 
     &:hover, &:focus, &:active {
-      color: darken($color2, 38%);
+      color: darken($base-txt, 38%);
     }
 
     &.onboarding-modal__done, &.onboarding-modal__next {
-      color: $color4;
+      color: $vibrant;
     }
   }
 }
@@ -2195,17 +2195,17 @@ button.icon-button.active i.fa-retweet {
   width: 14px;
   height: 14px;
   border-radius: 14px;
-  background: darken($color2, 16%);
+  background: darken($bg2, 16%);
   margin: 0 3px;
   cursor: pointer;
 
   &:hover {
-    background: darken($color2, 18%);
+    background: darken($bg2, 18%);
   }
 
   &.active {
     cursor: default;
-    background: darken($color2, 24%);
+    background: darken($bg2, 24%);
   }
 }
 
@@ -2216,21 +2216,21 @@ button.icon-button.active i.fa-retweet {
   h1 {
     font-size: 18px;
     font-weight: 500;
-    color: $color1;
+    color: $contrast-txt;
     margin-bottom: 20px;
   }
 
   a {
-    color: $color4;
+    color: $vibrant;
 
     &:hover, &:focus, &:active {
-      color: lighten($color4, 4%);
+      color: lighten($vibrant, 4%);
     }
   }
 
   p {
     font-size: 16px;
-    color: lighten($color1, 8%);
+    color: lighten($contrast-txt, 8%);
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -2240,8 +2240,8 @@ button.icon-button.active i.fa-retweet {
 
     strong {
       font-weight: 500;
-      background: $color1;
-      color: $color2;
+      background: $bg1;
+      color: $base-txt;
       border-radius: 4px;
       font-size: 14px;
       padding: 3px 6px;
@@ -2269,8 +2269,8 @@ button.icon-button.active i.fa-retweet {
   }
 
   .figure {
-    background: darken($color1, 8%);
-    color: $color2;
+    background: darken($bg1, 8%);
+    color: $base-txt;
     margin-bottom: 20px;
     border-radius: 4px;
     padding: 10px;
@@ -2379,7 +2379,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .loading-bar {
-  background-color: $color4;
+  background-color: $vibrant;
   height: 3px;
   position: absolute;
   top: 0;
