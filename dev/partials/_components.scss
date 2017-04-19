@@ -32,6 +32,7 @@
 .drawer,
 .column {
   display: flex;
+  flex: 1;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
@@ -42,6 +43,7 @@
 
   @media screen and (min-width: 64.1em) {
     border-left: 1px solid $border3;
+    width: auto;
 
     &:first-child {
       border: none;
@@ -53,15 +55,8 @@
   }
 }
 
-.column {
-    flex: 2;
-    width: auto;
-}
-
 .drawer {
   @media screen and (min-width: 64.1em) {
-    flex: 1;
-    min-width: 20em;
     padding: 0 !important;
   }
 }
@@ -251,7 +246,7 @@
   }
 }
 
-// pas trouvé où ça s'affiche
+// CW and NSFW buttons
 .text-icon-button {
   color: lighten($contrast-txt, 15%);
   border: none;
@@ -260,9 +255,9 @@
   font-weight: 600;
   font-size: .75rem;
   padding: 0 3px;
-  line-height: 1.5;
   outline: 0;
   transition: all 100ms ease-in;
+  line-height: 2.25;
 
   &:hover, &:active, &:focus {
     color: $vibrant;
@@ -287,7 +282,7 @@
   }
 }
 
-// pas trouvé dans les templates
+// déroulant du statut
 .dropdown--active .icon-button {
   color: $vibrant;
 }
@@ -515,6 +510,7 @@
   border-radius: 0 0 .25rem .25rem;
   display: flex;
   color: $contrast-txt;
+  line-height: 2.25;
 
   .icon-button {
     box-sizing: content-box;
