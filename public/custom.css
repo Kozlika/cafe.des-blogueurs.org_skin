@@ -1166,6 +1166,7 @@ code {
 .drawer,
 .column {
   display: flex;
+  flex: 1;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
@@ -1178,6 +1179,7 @@ code {
   .drawer,
   .column {
     border-left: 1px solid #495064;
+    width: auto;
   }
   .drawer:first-child,
   .column:first-child {
@@ -1189,15 +1191,8 @@ code {
   }
 }
 
-.column {
-  flex: 2;
-  width: auto;
-}
-
 @media screen and (min-width: 64.1em) {
   .drawer {
-    flex: 1;
-    min-width: 20em;
     padding: 0 !important;
   }
 }
@@ -1371,9 +1366,9 @@ code {
   font-weight: 600;
   font-size: .75rem;
   padding: 0 3px;
-  line-height: 1.5;
   outline: 0;
   transition: all 100ms ease-in;
+  line-height: 2.25;
 }
 .text-icon-button:hover, .text-icon-button:active, .text-icon-button:focus {
   color: #009092;
@@ -1582,6 +1577,7 @@ code {
   border-radius: 0 0 .25rem .25rem;
   display: flex;
   color: #393e4e;
+  line-height: 2.25;
 }
 .compose-form__buttons .icon-button {
   box-sizing: content-box;
@@ -1704,6 +1700,9 @@ code {
 .account__header {
   flex: 0 0 auto;
   text-align: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   position: relative;
 }
 .account__header .account__header__content {
@@ -2146,7 +2145,6 @@ code {
   overflow-x: hidden;
   flex: 1 1 auto;
   -webkit-overflow-scrolling: touch;
-  padding-right: .5rem;
 }
 .scrollable.optionally-scrollable {
   overflow-y: auto;
@@ -3142,7 +3140,7 @@ button.icon-button.active i.fa-retweet {
 }
 
 .onboarding-modal__page-one__elephant-friend {
-  background: url('/dev/images/elephant-friend.png?1492490858') no-repeat 0 0;
+  background: url('/dev/images/elephant-friend.png?1492496080') no-repeat 0 0;
   width: 147px;
   height: 160px;
   margin-right: 10px;
