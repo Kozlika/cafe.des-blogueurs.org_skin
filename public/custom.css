@@ -2145,7 +2145,6 @@ code {
   overflow-x: hidden;
   flex: 1 1 auto;
   -webkit-overflow-scrolling: touch;
-  padding-right: .5rem;
 }
 .scrollable.optionally-scrollable {
   overflow-y: auto;
