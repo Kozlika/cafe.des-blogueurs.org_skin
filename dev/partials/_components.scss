@@ -665,6 +665,25 @@
   .account__header__username {
     color: $accent;
   }
+
+  // rendre lisible le bloc "user" dans la colonne de droite, même sur une image de fond claire
+  & > div {
+    position:relative;
+    z-index:2;
+  }
+
+  &:after {
+    background: linear-gradient(rgba($sbg2, 0.5), rgba($sbg2, 0.8));
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
 }
 
 .account__header__content {
