@@ -1701,6 +1701,9 @@ code {
   flex: 0 0 auto;
   text-align: center;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 .account__header .account__header__content {
   color: #d0d3dd;

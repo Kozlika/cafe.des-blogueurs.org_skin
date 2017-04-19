@@ -651,6 +651,9 @@
   flex: 0 0 auto;
   text-align: center;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
   .account__header__content {
     color: $gray7;
