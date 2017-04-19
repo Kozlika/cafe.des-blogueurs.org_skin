@@ -24,10 +24,10 @@ Cette utilisation est pratique car elle vous permet de personnaliser l’afficha
 1. Télécharger ce dépôt.
 2. Installer Stylish (l’extension existe pour Firefox et Chrome). La version pour Chrome propose [une vidéo pour expliquer l’installation](https://userstyles.org/help/stylish_chrome).
 3. Une fois l’extension installée, positionnez-vous sur votre page Mastodon.
-4. Cliquer sur l’icône de Stylish (elle se trouve en principe dans la barre d’outils) et choisir «Créer un nouveau style» (il y a plusieurs choix, prendre celui qui indique l’url de votre instance).
+4. Cliquer sur l’icône de Stylish (elle se trouve en principe dans la barre d’outils) et choisir «Créer un nouveau style» (avec l'extension pour Forefox il y a plusieurs choix, prendre celui qui indique l’url de votre instance).
 5. Dans la fenêtre qui apparaît alors, copier-coller le contenu du fichier /public/custom.css (si vous utilisez la version Firefox coller le tout juste avant la dernière accolade fermante).
-6. Sur la seconde des barres horizontales noires de la fenêtre, donnez un nom à ce style.
-7. Sur la première barre noire horizontale, cliquer sur le bouton Enregistrer.
+6. Donnez un nom à ce style (pour Firefox le champ nom se situe sur la seconde des barres horizontales noires de la fenêtre).
+7. Enregistrer grâce au bouton idoine de l'interface de Stylish (pas depuis le menu du navigateur !).
 8. Votre instance est désormais dotée de son nouvel aspect.
 
 Si vous connaissez un peu les CSS vous pouvez modifier directement des règles dans la fenêtre de Stylish. Si vous connaissez Sass vous pouvez le faire plus proprement en travaillant à partir du répertoire /dev/ du dépôt après l’avoir téléchargé.
@@ -41,6 +41,12 @@ Cloner ou forker ce dépôt, puis :
 ```bash
 gem install sass 
 gem install compass 
+```
+
+Compiler : se placer à la racine du dépôt, puis :
+
+```bash
+compass watch
 ```
 
 Enjoy.

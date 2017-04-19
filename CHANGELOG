@@ -1,0 +1,20 @@
+Version 1.1 - 20 avril 2017
+---------------------------
+* Synchronisation avec les nouveautés de la 1.2 de Mastodon
+* Bugfixes (notamment saisie des messages, alignement des boutons)
+* Meilleure lisibilité du texte dans la présentation du profil
+* Recentrage de l'image de bannière dans la présentation du profil
+
+
+Version 1.0 - 17 avril 2017 - First relase
+------------------------------------------
+Modifs apportées au thème originel :
+* Layout fluide (prend toute la largeur de l’écran).
+* Pas d’espace entre les colonnes, juste un filet.
+* Icône signalant un message privé ou direct très visible.
+* Liens en couleur pour une meilleure visibilité.
+* Distinction légère entre le texte courant et les @mentions.
+* Palette de couleurs légèrement différente (mais dans le même esprit).
+* Dans la colonne des notifications, distinction plus marquée entre les notifications type bidule vous suit / bidule a boosté votre babil et les notifications de réponses / discussions.
+* Côté admin : suppression de la hauteur fixe qui rendait inatteignables les liens en bas du sidebar ; un peu plus de place dans la partie droite ; palette dans les gris bleutés.
+
