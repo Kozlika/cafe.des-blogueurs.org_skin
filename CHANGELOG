@@ -1,6 +1,6 @@
 Version 1.1 - 20 avril 2017
 ---------------------------
-* Synchronisation avec les nouveautés de la 1.2 de Mastodon
+* Synchronisation avec les nouveautés de la 1.2.2 de Mastodon
 * Bugfixes (notamment saisie des messages, alignement des boutons)
 * Meilleure lisibilité du texte dans la présentation du profil
 * Recentrage de l'image de bannière dans la présentation du profil
