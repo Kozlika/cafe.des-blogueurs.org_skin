@@ -705,13 +705,14 @@ code {
 }
 
 .accounts-grid {
-  clear: both;
   box-shadow: 0 0 15px rgba(40, 44, 55, 0.2);
   background: #e7e8ed;
   border-radius: 0 0 4px 4px;
   padding: 20px 10px;
   padding-bottom: 10px;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 40em) {
   .accounts-grid {
@@ -722,11 +723,9 @@ code {
 .accounts-grid .account-grid-card {
   box-sizing: border-box;
   width: 335px;
-  float: left;
   border: 1px solid #d0d3dd;
   border-radius: 4px;
   color: #393e4e;
-  height: 160px;
   margin-bottom: 10px;
 }
 .accounts-grid .account-grid-card:nth-child(odd) {
@@ -2291,16 +2290,15 @@ code {
   padding: 10px;
   font-family: inherit;
   font-size: 14px;
-  resize: vertical;
   border: 0;
   outline: 0;
 }
 .autosuggest-textarea__textarea:focus, .spoiler-input__input:focus {
   outline: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 39em) {
   .autosuggest-textarea__textarea, .spoiler-input__input {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -2314,6 +2312,13 @@ code {
   border-radius: 4px 4px 0 0;
   padding-bottom: 0;
   padding-right: 32px;
+  resize: none;
+}
+@media screen and (max-width: 39em) {
+  .autosuggest-textarea__textarea {
+    height: 100px !important;
+    resize: vertical;
+  }
 }
 
 .autosuggest-textarea__suggestions {
@@ -3304,6 +3309,52 @@ button.icon-button.active i.fa-retweet {
   opacity: 1;
 }
 
+.attachment-list {
+  display: flex;
+  font-size: 14px;
+  border: 1px solid #393f4f;
+  border-radius: 4px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+
+.attachment-list__icon {
+  flex: 0 0 auto;
+  color: #606984;
+  padding: 8px 18px;
+  cursor: default;
+  border-right: 1px solid #393f4f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+.attachment-list__icon .fa {
+  display: block;
+}
+
+.attachment-list__list {
+  list-style: none;
+  padding: 4px 0;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.attachment-list__list li {
+  display: block;
+  padding: 4px 0;
+}
+.attachment-list__list a {
+  text-decoration: none;
+  color: #606984;
+  font-weight: 500;
+}
+.attachment-list__list a:hover {
+  text-decoration: underline;
+}
+
 .about-body .wrapper {
   max-width: 40em;
   margin: 0 auto;
@@ -3688,6 +3739,8 @@ a.table-action-link i.fa {
 .admin-wrapper .sidebar {
   width: 18em;
   height: 100%;
+  padding: 0;
+  overflow-y: auto;
 }
 .admin-wrapper .sidebar .logo {
   display: block;
@@ -3699,6 +3752,7 @@ a.table-action-link i.fa {
   list-style: none;
   border-radius: 4px 0 0 4px;
   overflow: hidden;
+  margin-bottom: 1.25rem;
 }
 .admin-wrapper .sidebar ul a {
   display: block;
@@ -3723,6 +3777,7 @@ a.table-action-link i.fa {
   background: #2c3e50;
   border-radius: 0 0 0 4px;
   border-right: 1px solid #34495e;
+  margin: 0;
 }
 .admin-wrapper .sidebar ul ul a {
   border: 0;
@@ -3781,6 +3836,13 @@ a.table-action-link i.fa {
 }
 .admin-wrapper .simple_form {
   max-width: 33em;
+}
+.admin-wrapper .simple_form .label_input label.select {
+  width: 50%;
+}
+.admin-wrapper .simple_form .label_input select {
+  width: 50%;
+  float: right;
 }
 @media screen and (max-width: 40em) {
   .admin-wrapper {
