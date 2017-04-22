@@ -4417,7 +4417,7 @@ button.icon-button.active i.fa-retweet {
   font-weight: 500;
 }
 .table > tbody > tr:nth-child(odd) > td, .table > tbody > tr:nth-child(odd) > th {
-  background: #393e4e;
+  background: #34495e;
 }
 .table a {
   color: #009092;
@@ -4470,9 +4470,14 @@ a.table-action-link i.fa {
 }
 .admin-wrapper .sidebar .logo {
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 100px;
   height: 100px;
+}
+@media screen and (min-width: 39em) {
+  .admin-wrapper .sidebar .logo {
+    margin: 4rem auto 1.75rem;
+  }
 }
 .admin-wrapper .sidebar ul {
   list-style: none;
@@ -4528,9 +4533,7 @@ a.table-action-link i.fa {
 }
 .admin-wrapper .content {
   max-width: 46em;
-  padding: 20px 15px;
-  padding-top: 60px;
-  padding-left: 25px;
+  padding: 4rem 1rem 1rem 1.5rem;
 }
 .admin-wrapper .content h2 {
   color: #e7e8ed;
@@ -4538,6 +4541,11 @@ a.table-action-link i.fa {
   line-height: 1;
   font-weight: 400;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 39em) {
+  .admin-wrapper .content h2 {
+    margin-bottom: 4rem;
+  }
 }
 .admin-wrapper .content > p {
   font-size: .875em;
@@ -4561,16 +4569,20 @@ a.table-action-link i.fa {
   }
 }
 .admin-wrapper .simple_form {
-  max-width: 33em;
+  width: 100%;
+  max-width: 39em;
 }
-.admin-wrapper .simple_form .label_input label.select {
-  width: 50%;
+.admin-wrapper .simple_form label.select,
+.admin-wrapper .simple_form label.radio_buttons {
+  width: 13em;
+  display: inline-block;
+  vertical-align: top;
 }
-.admin-wrapper .simple_form .label_input select {
-  width: 50%;
-  float: right;
+.admin-wrapper .simple_form select {
+  display: inline-block;
+  vertical-align: top;
 }
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 39em) {
   .admin-wrapper {
     display: block;
     overflow-y: auto;
