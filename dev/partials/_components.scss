@@ -114,6 +114,12 @@
     color: $base2-txt;
     text-shadow: 0 0 10px rgba($vibrant, 0.4);
   }
+
+  &.hidden-on-mobile {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
 }
 
 .column-icon {
@@ -1188,6 +1194,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   flex: 1 1 auto;
+  backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
 
   &.optionally-scrollable {
@@ -1303,9 +1310,16 @@
 .column-link {
   background: $bg2;
   color: $lightest;
+  display: block;
 
   &:hover {
     background: $bg3;
+  }
+
+  &.hidden-on-mobile {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
 }
 
