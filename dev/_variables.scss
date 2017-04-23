@@ -16,7 +16,7 @@ $gray1:             #282c37;
 $gray2:             #393e4e;
 $gray3:             #495064;
 $gray4:             #5a637b;
-$gray5:             #6a7592;
+$gray5:             #6a7592; // unused
 $gray6:             #93abc3;
 $gray7:             #d0d3dd;
 $gray8:             #e7e8ed;
@@ -59,7 +59,7 @@ $base2-txt:         $gray7; // same with little mute
 $contrast-txt:      $gray2; // inverted backgrounds
 
 // all types colors
-$muted:             lighten($gray2, 45%);
+$muted:             lighten($gray2, 45%); // #abb0c2
 $accent:            $blue-green;
 $light-accent:      $blue-light;
 $vibrant:           $turquoise;
@@ -68,5 +68,13 @@ $vibrant:           $turquoise;
 $body-bg:           $bg1;
 $alt-body-bg:       $sbg1;
 $body-txt:          $base-txt;
+
+
+// MEDIA QUERIES (not in use yet, will be)
+// -------------------
+$unpeu:             20em;
+$beaucoup:          39em;
+$passion:           64em;
+$folie:             120em;
 
 

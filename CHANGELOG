@@ -1,6 +1,19 @@
-Version 1.1 - 20 avril 2017
+Version xx - xx xxx 2017
+---------------------------
+* Synchronisation avec la 1.x.x de Mastodon
+* Bugfix interlignage menu déroulant statut d'un message
+* Préparation variables RWD
+* Améliorations graphiques de l'admin
+
+
+Version 1.2 - 20 avril 2017
 ---------------------------
 * Synchronisation avec les nouveautés de la 1.2.2 de Mastodon
+
+
+Version 1.1 - 19 avril 2017
+---------------------------
+* Synchronisation avec les nouveautés de la 1.2 de Mastodon
 * Bugfixes (notamment saisie des messages, alignement des boutons)
 * Meilleure lisibilité du texte dans la présentation du profil
 * Recentrage de l'image de bannière dans la présentation du profil
