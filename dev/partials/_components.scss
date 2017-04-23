@@ -188,11 +188,11 @@
 
 .column-back-button {
   background-color: $bg2;
-  padding: 1rem;
-  font-size: 1rem;
-  flex: 0 0 auto;
   cursor: pointer;
   color: $base2-txt;
+  flex: 0 0 auto;
+  font-size: 1rem;
+  padding: 1rem;
   z-index: 3;
 
   &:hover {
@@ -613,6 +613,12 @@
 .compose-form__upload {
   flex: 1 1 0;
   margin: 5px;
+}
+
+.compose-form__upload-thumbnail {
+  border-radius: 4px;
+  height: 100px;
+  width: 100%;
 }
 
 .compose-form__upload-cancel {
@@ -2155,7 +2161,7 @@ button.icon-button.active i.fa-retweet {
 
     .emoji {
       display: inline-block;
-      padding: 5px;
+      padding: 2.5px;
       border-radius: 4px;
     }
   }
@@ -2464,10 +2470,6 @@ button.icon-button.active i.fa-retweet {
     background: $lightest;
     border-radius: 4px 4px 0 0;
     box-shadow: 0 -4px 4px rgba($darkest, 0.1);
-  }
-
-  .privacy-dropdown__value-icon {
-    line-height: 27px;
   }
 
   .privacy-dropdown__dropdown {
@@ -3156,7 +3158,7 @@ button.icon-button.active i.fa-retweet {
 .media-spoiler-video-play-icon {
   border-radius: 100px;
   color: rgba(255, 255, 255, 0.8);
-  fontSize: 36px;
+  font-size: 36px;
   padding: 5px;
   position: absolute;
   top: 50%;
