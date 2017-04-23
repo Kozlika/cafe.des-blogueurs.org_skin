@@ -3381,6 +3381,7 @@ button.icon-button.active i.fa-retweet {
   display: none;
   position: absolute;
   left: 0;
+  line-height: 1.25;
   top: 27px;
   width: 230px;
   background: #e7e8ed;
