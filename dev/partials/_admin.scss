@@ -148,6 +148,16 @@
       display: inline-block;
       vertical-align: top;
     }
+
+    .actions {
+      text-align: center;
+    }
+
+    button {
+      display: inline-block;
+      padding: .5em 1.5em;
+      width: auto;
+    }
   }
 
   @media screen and (max-width: 39em) {

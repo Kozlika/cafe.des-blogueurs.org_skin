@@ -4583,6 +4583,14 @@ a.table-action-link i.fa {
   display: inline-block;
   vertical-align: top;
 }
+.admin-wrapper .simple_form .actions {
+  text-align: center;
+}
+.admin-wrapper .simple_form button {
+  display: inline-block;
+  padding: .5em 1.5em;
+  width: auto;
+}
 @media screen and (max-width: 39em) {
   .admin-wrapper {
     display: block;
