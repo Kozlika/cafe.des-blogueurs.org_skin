@@ -151,6 +151,13 @@ body.admin {
   max-width: 39em;
 }
 
+.mastodon-column-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
 .logo-container {
   max-width: 400px;
   margin: 100px auto;
@@ -182,7 +189,7 @@ body.admin {
 }
 .logo-container h1 a img {
   opacity: 0.8;
-  transition: all 0.8s ease;
+  transition: opacity 0.8s ease;
 }
 .logo-container h1 a:hover img {
   opacity: 1;
@@ -1159,6 +1166,7 @@ code {
   flex-direction: row;
   justify-content: flex-start;
   overflow-x: auto;
+  position: relative;
 }
 @media screen and (min-width: 20em) {
   .columns-area {
@@ -1229,12 +1237,12 @@ code {
   text-decoration: none;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  transition: all 100ms ease-in;
+  transition: color 100ms ease-in;
   white-space: nowrap;
 }
 .button:active, .button:focus, .button:hover {
   background-color: #00c2c5;
-  transition: all 200ms ease-out;
+  transition: color 200ms ease-out;
 }
 .button:disabled {
   background-color: #5a637b;
@@ -1319,11 +1327,11 @@ code {
 
 .column-back-button {
   background-color: #393e4e;
-  padding: 1rem;
-  font-size: 1rem;
-  flex: 0 0 auto;
   cursor: pointer;
   color: #d0d3dd;
+  flex: 0 0 auto;
+  font-size: 1rem;
+  padding: 1rem;
   z-index: 3;
 }
 .column-back-button:hover {
@@ -1361,11 +1369,11 @@ code {
   border: none;
   background: transparent;
   cursor: pointer;
-  transition: all 100ms ease-in;
+  transition: color 100ms ease-in;
 }
 .icon-button:hover, .icon-button:active, .icon-button:focus {
   color: #e7e8ed;
-  transition: all 200ms ease-out;
+  transition: color 200ms ease-out;
 }
 .icon-button.disabled {
   color: #393e4e;
@@ -1417,12 +1425,12 @@ code {
   font-size: .75rem;
   padding: 0 3px;
   outline: 0;
-  transition: all 100ms ease-in;
+  transition: background 100ms ease-in;
   line-height: 2.25;
 }
 .text-icon-button:hover, .text-icon-button:active, .text-icon-button:focus {
   color: #009092;
-  transition: all 200ms ease-out;
+  transition: background 200ms ease-out;
 }
 .text-icon-button.disabled {
   color: #abb0c2;
@@ -1584,6 +1592,9 @@ code {
 
 .status__display-name {
   color: #606984;
+}
+
+.status__info .status__display-name {
   display: block;
   max-width: 100%;
   padding-right: 25px;
@@ -1685,6 +1696,12 @@ code {
 .compose-form__upload {
   flex: 1 1 0;
   margin: 5px;
+}
+
+.compose-form__upload-thumbnail {
+  border-radius: 4px;
+  height: 100px;
+  width: 100%;
 }
 
 .compose-form__upload-cancel {
@@ -2071,7 +2088,7 @@ code {
 }
 
 .detailed-status__display-avatar {
-  float: right;
+  float: left;
   margin-right: 10px;
 }
 
@@ -2093,11 +2110,11 @@ code {
 .muted .status__avatar {
   opacity: 0.5;
 }
-.muted .status__content__spoiler-link {
+.muted a.status__content__spoiler-link {
   background: #495064;
   color: #d0d3dd;
 }
-.muted .status__content__spoiler-link:hover, .muted .status__content__spoiler-link:focus {
+.muted a.status__content__spoiler-link:hover, .muted a.status__content__spoiler-link:focus {
   background: #393e4e;
   color: #abb0c2;
   text-decoration: none;
@@ -2118,6 +2135,9 @@ code {
 .notification__favourite-icon-wrapper {
   left: -26px;
   position: absolute;
+}
+.notification__favourite-icon-wrapper .star-icon {
+  color: #ca8f04;
 }
 
 .star-icon.active {
@@ -3117,7 +3137,7 @@ button.icon-button.active i.fa-retweet {
 }
 .emoji-dialog .emoji-row .emoji {
   display: inline-block;
-  padding: 5px;
+  padding: 2.5px;
   border-radius: 4px;
 }
 .emoji-dialog .emoji-category-header {
@@ -3390,9 +3410,6 @@ button.icon-button.active i.fa-retweet {
   background: #e7e8ed;
   border-radius: 4px 4px 0 0;
   box-shadow: 0 -4px 4px rgba(40, 44, 55, 0.1);
-}
-.privacy-dropdown.active .privacy-dropdown__value-icon {
-  line-height: 27px;
 }
 .privacy-dropdown.active .privacy-dropdown__dropdown {
   display: block;
@@ -3944,6 +3961,8 @@ button.icon-button.active i.fa-retweet {
 }
 
 .media-gallery__item-thumbnail {
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   cursor: zoom-in;
   display: block;
@@ -4033,7 +4052,7 @@ button.icon-button.active i.fa-retweet {
 .media-spoiler-video-play-icon {
   border-radius: 100px;
   color: rgba(255, 255, 255, 0.8);
-  fontSize: 36px;
+  font-size: 36px;
   padding: 5px;
   position: absolute;
   top: 50%;

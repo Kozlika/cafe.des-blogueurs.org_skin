@@ -22,6 +22,7 @@
   flex-direction: row;
   justify-content: flex-start;
   overflow-x: auto;
+  position: relative;
 
   @media screen and (min-width: 20em) {
     padding: .5rem;
@@ -88,14 +89,14 @@
   text-decoration: none;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  transition: all 100ms ease-in;
+  transition: color 100ms ease-in;
   white-space: nowrap;
 
   &:active,
   &:focus,
   &:hover {
     background-color: lighten($vibrant, 10%);
-    transition: all 200ms ease-out;
+    transition: color 200ms ease-out;
   }
 
   &:disabled {
@@ -233,11 +234,11 @@
   border: none;
   background: transparent;
   cursor: pointer;
-  transition: all 100ms ease-in;
+  transition: color 100ms ease-in;
 
   &:hover, &:active, &:focus {
     color: $base-txt;
-    transition: all 200ms ease-out;
+    transition: color 200ms ease-out;
   }
 
   &.disabled {
@@ -302,12 +303,12 @@
   font-size: .75rem;
   padding: 0 3px;
   outline: 0;
-  transition: all 100ms ease-in;
+  transition: background 100ms ease-in;
   line-height: 2.25;
 
   &:hover, &:active, &:focus {
     color: $vibrant;
-    transition: all 200ms ease-out;
+    transition: background 200ms ease-out;
   }
 
   &.disabled {
@@ -506,6 +507,9 @@
 
 .status__display-name {
   color: lighten($color1, 26%);
+}
+
+.status__info .status__display-name {
   display: block;
   max-width: 100%;
   padding-right: 25px;
@@ -1054,7 +1058,7 @@
 }
 
 .detailed-status__display-avatar {
-  float: right;
+  float: left;
   margin-right: 10px;
 }
 
@@ -1079,7 +1083,7 @@
     opacity: 0.5;
   }
 
-  .status__content__spoiler-link {
+  a.status__content__spoiler-link {
     background: $bg3;
     color: $base2-txt;
 
@@ -1107,6 +1111,10 @@
 .notification__favourite-icon-wrapper {
   left: -26px;
   position: absolute;
+
+  .star-icon {
+    color: #ca8f04;
+  }
 }
 
 .star-icon.active {
@@ -3071,6 +3079,8 @@ button.icon-button.active i.fa-retweet {
 }
 
 .media-gallery__item-thumbnail {
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   cursor: zoom-in;
   display: block;
