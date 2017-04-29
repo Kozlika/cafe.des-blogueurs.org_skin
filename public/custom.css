@@ -1183,10 +1183,9 @@ code {
 }
 
 .drawer,
-.column,
-.columns-area > div:last-child {
-  display: flex;
-  flex: 1;
+.column {
+  display: flex !important;
+  flex: 1 !important;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
@@ -1197,19 +1196,16 @@ code {
 }
 @media screen and (min-width: 64.1em) {
   .drawer,
-  .column,
-  .columns-area > div:last-child {
+  .column {
     border-left: 1px solid #495064;
     width: auto;
   }
   .drawer:first-child,
-  .column:first-child,
-  .columns-area > div:last-child:first-child {
+  .column:first-child {
     border: none;
   }
   .drawer:last-child,
-  .column:last-child,
-  .columns-area > div:last-child:last-child {
+  .column:last-child {
     padding-right: 0;
   }
 }
@@ -1218,6 +1214,11 @@ code {
   .drawer {
     padding: 0 !important;
   }
+}
+
+.columns-area > div:last-child {
+  flex: 1 !important;
+  border-left: 1px solid #495064;
 }
 
 .column-collapsable {
