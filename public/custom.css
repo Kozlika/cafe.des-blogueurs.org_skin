@@ -1170,22 +1170,12 @@ code {
   justify-content: flex-start;
   overflow-x: auto;
   position: relative;
-}
-@media screen and (min-width: 20em) {
-  .columns-area {
-    padding: .5rem;
-  }
-}
-@media screen and (min-width: 64.1em) {
-  .columns-area {
-    padding: .25em;
-  }
+  padding: .25em;
 }
 
-.drawer,
-.column {
+.columns-area > div {
   display: flex;
-  flex: 1;
+  flex: 1 !important;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
@@ -1195,30 +1185,22 @@ code {
   padding: 0;
 }
 @media screen and (min-width: 64.1em) {
-  .drawer,
-  .column {
+  .columns-area > div {
     border-left: 1px solid #495064;
-    width: auto;
+    width: 25%;
   }
-  .drawer:first-child,
-  .column:first-child {
+  .columns-area > div:first-child {
     border: none;
   }
-  .drawer:last-child,
-  .column:last-child {
+  .columns-area > div:last-child {
     padding-right: 0;
   }
 }
 
 @media screen and (min-width: 64.1em) {
   .drawer {
-    padding: 0 !important;
+    padding: 0;
   }
-}
-
-.columns-area > div:last-child {
-  flex: 1 !important;
-  border-left: 1px solid #495064;
 }
 
 .column-collapsable {
@@ -2394,7 +2376,7 @@ code {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 .5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;

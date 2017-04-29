@@ -23,19 +23,12 @@
   justify-content: flex-start;
   overflow-x: auto;
   position: relative;
-
-  @media screen and (min-width: 20em) {
-    padding: .5rem;
-  }
-  @media screen and (min-width: 64.1em) {
-    padding: .25em;
-  }
+  padding: .25em;
 }
 
-.drawer,
-.column {
+.columns-area > div {
   display: flex;
-  flex: 1;
+  flex: 1 !important;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
@@ -46,7 +39,7 @@
 
   @media screen and (min-width: 64.1em) {
     border-left: 1px solid $border3;
-    width: auto;
+    width: 25%;
 
     &:first-child {
       border: none;
@@ -60,14 +53,8 @@
 
 .drawer {
   @media screen and (min-width: 64.1em) {
-    padding: 0 !important;
+    padding: 0;
   }
-}
-
-// because inline styles sucks
-.columns-area > div:last-child {
-  flex: 1 !important;
-  border-left: 1px solid $border3;
 }
 
 .column-collapsable {
@@ -1392,7 +1379,7 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 .5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
