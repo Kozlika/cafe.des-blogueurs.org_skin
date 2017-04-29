@@ -1183,7 +1183,8 @@ code {
 }
 
 .drawer,
-.column {
+.column,
+.columns-area > div:last-child {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -1196,16 +1197,19 @@ code {
 }
 @media screen and (min-width: 64.1em) {
   .drawer,
-  .column {
+  .column,
+  .columns-area > div:last-child {
     border-left: 1px solid #495064;
     width: auto;
   }
   .drawer:first-child,
-  .column:first-child {
+  .column:first-child,
+  .columns-area > div:last-child:first-child {
     border: none;
   }
   .drawer:last-child,
-  .column:last-child {
+  .column:last-child,
+  .columns-area > div:last-child:last-child {
     padding-right: 0;
   }
 }
@@ -4721,7 +4725,7 @@ body.rtl .column-icon-clear {
 }
 body.rtl .column-icon {
   right: auto;
-  left: 0;
+  left: 5px;
 }
 body.rtl .setting-toggle {
   margin-left: 0;
