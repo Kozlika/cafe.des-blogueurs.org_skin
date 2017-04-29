@@ -1170,22 +1170,14 @@ code {
   justify-content: flex-start;
   overflow-x: auto;
   position: relative;
-}
-@media screen and (min-width: 20em) {
-  .columns-area {
-    padding: .5rem;
-  }
-}
-@media screen and (min-width: 64.1em) {
-  .columns-area {
-    padding: .25em;
-  }
+  padding: .25em;
 }
 
 .drawer,
-.column {
+.column,
+.columns-area > div:last-child {
   display: flex;
-  flex: 1;
+  flex: 1 !important;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
@@ -1196,23 +1188,26 @@ code {
 }
 @media screen and (min-width: 64.1em) {
   .drawer,
-  .column {
+  .column,
+  .columns-area > div:last-child {
     border-left: 1px solid #495064;
     width: auto;
   }
   .drawer:first-child,
-  .column:first-child {
+  .column:first-child,
+  .columns-area > div:last-child:first-child {
     border: none;
   }
   .drawer:last-child,
-  .column:last-child {
+  .column:last-child,
+  .columns-area > div:last-child:last-child {
     padding-right: 0;
   }
 }
 
 @media screen and (min-width: 64.1em) {
   .drawer {
-    padding: 0 !important;
+    padding: 0;
   }
 }
 
@@ -1553,7 +1548,7 @@ code {
   cursor: default;
 }
 .status.light .status__relative-time {
-  color: #93abc3;
+  color: #707997;
 }
 .status.light .status__display-name {
   color: #393e4e;
@@ -1562,7 +1557,7 @@ code {
   color: #393e4e;
 }
 .status.light .display-name span {
-  color: #93abc3;
+  color: #707997;
 }
 .status.light .status__content {
   color: #393e4e;
@@ -2182,8 +2177,13 @@ code {
 
 .display-name__account {
   font-size: 14px;
+  color: #abb0c2;
 }
 
+.status__relative-time,
+.detailed-status__datetime {
+  color: #abb0c2;
+}
 .status__relative-time:hover,
 .detailed-status__datetime:hover {
   text-decoration: underline;
@@ -2389,7 +2389,7 @@ code {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0 .5rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -3381,6 +3381,7 @@ button.icon-button.active i.fa-retweet {
   display: none;
   position: absolute;
   left: 0;
+  line-height: 1.25;
   top: 27px;
   width: 230px;
   background: #e7e8ed;
@@ -3841,7 +3842,7 @@ button.icon-button.active i.fa-retweet {
 .confirmation-modal__action-bar > div {
   flex: 1 1 auto;
   text-align: right;
-  color: #abb0c2;
+  color: #707997;
   padding-right: 10px;
 }
 .boost-modal__action-bar .button,
@@ -4417,7 +4418,7 @@ button.icon-button.active i.fa-retweet {
   font-weight: 500;
 }
 .table > tbody > tr:nth-child(odd) > td, .table > tbody > tr:nth-child(odd) > th {
-  background: #393e4e;
+  background: #34495e;
 }
 .table a {
   color: #009092;
@@ -4470,9 +4471,14 @@ a.table-action-link i.fa {
 }
 .admin-wrapper .sidebar .logo {
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 100px;
   height: 100px;
+}
+@media screen and (min-width: 39em) {
+  .admin-wrapper .sidebar .logo {
+    margin: 4rem auto 1.75rem;
+  }
 }
 .admin-wrapper .sidebar ul {
   list-style: none;
@@ -4528,9 +4534,7 @@ a.table-action-link i.fa {
 }
 .admin-wrapper .content {
   max-width: 46em;
-  padding: 20px 15px;
-  padding-top: 60px;
-  padding-left: 25px;
+  padding: 4rem 1rem 1rem 1.5rem;
 }
 .admin-wrapper .content h2 {
   color: #e7e8ed;
@@ -4538,6 +4542,11 @@ a.table-action-link i.fa {
   line-height: 1;
   font-weight: 400;
   margin-bottom: 40px;
+}
+@media screen and (min-width: 39em) {
+  .admin-wrapper .content h2 {
+    margin-bottom: 4rem;
+  }
 }
 .admin-wrapper .content > p {
   font-size: .875em;
@@ -4561,16 +4570,28 @@ a.table-action-link i.fa {
   }
 }
 .admin-wrapper .simple_form {
-  max-width: 33em;
+  width: 100%;
+  max-width: 39em;
 }
-.admin-wrapper .simple_form .label_input label.select {
-  width: 50%;
+.admin-wrapper .simple_form label.select,
+.admin-wrapper .simple_form label.radio_buttons {
+  width: 13em;
+  display: inline-block;
+  vertical-align: top;
 }
-.admin-wrapper .simple_form .label_input select {
-  width: 50%;
-  float: right;
+.admin-wrapper .simple_form select {
+  display: inline-block;
+  vertical-align: top;
 }
-@media screen and (max-width: 40em) {
+.admin-wrapper .simple_form .actions {
+  text-align: center;
+}
+.admin-wrapper .simple_form button {
+  display: inline-block;
+  padding: .5em 1.5em;
+  width: auto;
+}
+@media screen and (max-width: 39em) {
   .admin-wrapper {
     display: block;
     overflow-y: auto;
@@ -4700,7 +4721,7 @@ body.rtl .column-icon-clear {
 }
 body.rtl .column-icon {
   right: auto;
-  left: 0;
+  left: 5px;
 }
 body.rtl .setting-toggle {
   margin-left: 0;
