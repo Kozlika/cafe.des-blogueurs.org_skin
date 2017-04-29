@@ -33,7 +33,8 @@
 }
 
 .drawer,
-.column {
+.column,
+.columns-area > div:last-child {
   display: flex;
   flex: 1;
   flex-direction: column;
