@@ -1173,7 +1173,9 @@ code {
   padding: .25em;
 }
 
-.columns-area > div {
+.drawer,
+.column,
+.columns-area > div:last-child {
   display: flex;
   flex: 1 !important;
   flex-direction: column;
@@ -1185,14 +1187,20 @@ code {
   padding: 0;
 }
 @media screen and (min-width: 64.1em) {
-  .columns-area > div {
+  .drawer,
+  .column,
+  .columns-area > div:last-child {
     border-left: 1px solid #495064;
     width: auto;
   }
-  .columns-area > div:first-child {
+  .drawer:first-child,
+  .column:first-child,
+  .columns-area > div:last-child:first-child {
     border: none;
   }
-  .columns-area > div:last-child {
+  .drawer:last-child,
+  .column:last-child,
+  .columns-area > div:last-child:last-child {
     padding-right: 0;
   }
 }
