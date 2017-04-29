@@ -34,8 +34,8 @@
 
 .drawer,
 .column {
-  display: flex !important;
-  flex: 1 !important;
+  display: flex;
+  flex: 1;
   flex-direction: column;
   width: 100%;
   overflow: hidden;
