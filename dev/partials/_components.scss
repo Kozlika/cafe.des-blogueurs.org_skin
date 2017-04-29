@@ -453,7 +453,7 @@
 
   &.light {
     .status__relative-time {
-      color: $gray6;
+      color: $contrast-muted;
     }
 
     .status__display-name {
@@ -466,7 +466,7 @@
       }
 
       span {
-        color: $gray6;
+        color: $contrast-muted;
       }
     }
 
@@ -2936,7 +2936,7 @@ button.icon-button.active i.fa-retweet {
   & > div {
     flex: 1 1 auto;
     text-align: right;
-    color: $muted;
+    color: $contrast-muted;
     padding-right: 10px;
   }
 

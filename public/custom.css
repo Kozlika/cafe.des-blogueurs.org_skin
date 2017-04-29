@@ -1553,7 +1553,7 @@ code {
   cursor: default;
 }
 .status.light .status__relative-time {
-  color: #93abc3;
+  color: #707997;
 }
 .status.light .status__display-name {
   color: #393e4e;
@@ -1562,7 +1562,7 @@ code {
   color: #393e4e;
 }
 .status.light .display-name span {
-  color: #93abc3;
+  color: #707997;
 }
 .status.light .status__content {
   color: #393e4e;
@@ -3842,7 +3842,7 @@ button.icon-button.active i.fa-retweet {
 .confirmation-modal__action-bar > div {
   flex: 1 1 auto;
   text-align: right;
-  color: #abb0c2;
+  color: #707997;
   padding-right: 10px;
 }
 .boost-modal__action-bar .button,

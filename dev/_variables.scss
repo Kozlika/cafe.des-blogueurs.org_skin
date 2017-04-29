@@ -57,9 +57,10 @@ $border3:           $gray3;
 $base-txt:          $lightest;
 $base2-txt:         $gray7; // same with little mute
 $contrast-txt:      $gray2; // inverted backgrounds
+$muted:             lighten($gray2, 45%); // #abb0c2
+$contrast-muted:  lighten($gray2, 25%);
 
 // all types colors
-$muted:             lighten($gray2, 45%); // #abb0c2
 $accent:            $blue-green;
 $light-accent:      $blue-light;
 $vibrant:           $turquoise;
