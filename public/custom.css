@@ -2177,8 +2177,13 @@ code {
 
 .display-name__account {
   font-size: 14px;
+  color: #abb0c2;
 }
 
+.status__relative-time,
+.detailed-status__datetime {
+  color: #abb0c2;
+}
 .status__relative-time:hover,
 .detailed-status__datetime:hover {
   text-decoration: underline;

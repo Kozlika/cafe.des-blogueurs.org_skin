@@ -1158,10 +1158,13 @@
 
 .display-name__account {
   font-size: 14px;
+  color: $muted;
 }
 
 .status__relative-time,
 .detailed-status__datetime {
+  color: $muted;
+
   &:hover {
     text-decoration: underline;
   }
