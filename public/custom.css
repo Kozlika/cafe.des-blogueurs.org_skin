@@ -1187,7 +1187,7 @@ code {
 @media screen and (min-width: 64.1em) {
   .columns-area > div {
     border-left: 1px solid #495064;
-    width: 25%;
+    width: auto;
   }
   .columns-area > div:first-child {
     border: none;
