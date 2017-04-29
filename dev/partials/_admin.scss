@@ -19,9 +19,13 @@
 
     .logo {
       display: block;
-      margin: 0 auto;
+      margin: 1rem auto;
       width: 100px;
       height: 100px;
+
+      @media screen and (min-width:39em) {
+        margin: 4rem auto 1.75rem;
+      }
     }
 
     ul {
@@ -91,9 +95,7 @@
 
   .content {
     max-width: 46em;
-    padding: 20px 15px;
-    padding-top: 60px;
-    padding-left: 25px;
+    padding: 4rem 1rem 1rem 1.5rem;
 
     h2 {
       color: $lightest;
@@ -101,6 +103,10 @@
       line-height: 1;
       font-weight: 400;
       margin-bottom: 40px;
+
+      @media screen and (min-width: 39em) {
+        margin-bottom: 4rem;
+      }
     }
 
     & > p {
@@ -128,21 +134,33 @@
   }
 
   .simple_form {
-    max-width: 33em;
+    width: 100%;
+    max-width: 39em;
 
-    .label_input {
-      label.select {
-        width: 50%;
-      }
+    label.select,
+    label.radio_buttons {
+      width: 13em;
+      display: inline-block;
+      vertical-align: top;
+    }
 
-      select {
-        width: 50%;
-        float: right;
-      }
+    select {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .actions {
+      text-align: center;
+    }
+
+    button {
+      display: inline-block;
+      padding: .5em 1.5em;
+      width: auto;
     }
   }
 
-  @media screen and (max-width: 40em) {
+  @media screen and (max-width: 39em) {
     display: block;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
