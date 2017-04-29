@@ -1,9 +1,10 @@
-Version xx - xx xxx 2017
+Version 1.3 - 29 avril 2017
 ---------------------------
-* Synchronisation avec la 1.x.x de Mastodon
+* Synchronisation avec la 1.3.1 de Mastodon
 * Bugfix interlignage menu déroulant statut d'un message
 * Préparation variables RWD
 * Améliorations graphiques de l'admin
+* Meilleure lisibilité des textes clairs sur fond clair
 
 
 Version 1.2 - 20 avril 2017
