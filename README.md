@@ -12,7 +12,7 @@ https://cafe.des-blogueurs.org redistribué pour qui veut.
 
 ### Avertissement
 
-* Les sources de la variation "sprintime" ne sont pas encore sur le dépôt.
+* Les sources de la variation "springtime" ne sont pas encore sur le dépôt.
 * La variation "custom" n'est pas encore up-to-date avec la version stable de Mastodon (1.3.2).
 
 ## Présentation
