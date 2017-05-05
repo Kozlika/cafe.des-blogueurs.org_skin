@@ -8,7 +8,7 @@ https://cafe.des-blogueurs.org redistribué pour qui veut.
 ![Copie d’écran du Café des blogueurs](screenshot-dark.png?raw=true)
 
 ### Light (springtime.css)
-![Copie d’écran du Café des blogueurs](screenshot-light.png?raw=true)L
+![Copie d’écran du Café des blogueurs](screenshot-light.png?raw=true)
 
 ### Avertissement
 
